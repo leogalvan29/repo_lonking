@@ -152,6 +152,30 @@ function amex_get_field( $selector, $post_id = false, $default = '' ) {
 }
 
 /**
+ * Teléfono del sitio (header/footer/WhatsApp) — vive en el Customizer
+ * (Apariencia > Personalizar > Información de Contacto), no en ACF.
+ */
+function amex_theme_telefono() {
+	return get_theme_mod( 'site_telefono', '614 280 0464' );
+}
+
+/**
+ * Mismo teléfono, listo para usarse en un href="tel:..." (+52 y solo
+ * dígitos).
+ */
+function amex_theme_telefono_href() {
+	return '+52' . preg_replace( '/[^0-9]/', '', amex_theme_telefono() );
+}
+
+/**
+ * Mismo teléfono, listo para usarse en un link https://wa.me/... (52 y
+ * solo dígitos, sin el "+").
+ */
+function amex_theme_telefono_whatsapp() {
+	return '52' . preg_replace( '/[^0-9]/', '', amex_theme_telefono() );
+}
+
+/**
  * Lista de estados de México, usada en el select de cualquier
  * formulario de contacto/cotización del sitio.
  */

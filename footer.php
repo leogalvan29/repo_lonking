@@ -7,8 +7,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-$footer_telefono      = amex_contact_field( 'telefono', '614 280 0464' );
-$footer_telefono_href = '+52' . preg_replace( '/[^0-9]/', '', $footer_telefono );
+$footer_telefono      = amex_theme_telefono();
+$footer_telefono_href = amex_theme_telefono_href();
 $footer_facebook      = amex_contact_field( 'facebook_url', 'https://www.facebook.com/amexmachinery/' );
 $footer_instagram     = amex_contact_field( 'instagram_url', 'https://www.instagram.com/amexmachinery' );
 $footer_linkedin      = amex_contact_field( 'linkedin_url', 'https://www.linkedin.com/company/amex-machinery/' );

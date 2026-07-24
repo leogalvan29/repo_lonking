@@ -79,7 +79,7 @@ function amex_whatsapp_url( $product_name = '' ) {
 		? sprintf( __( 'Hola, me interesa cotizar el equipo %s', 'amex-machinery' ), $product_name )
 		: __( 'Necesito más información sobre AMEX Machinery', 'amex-machinery' );
 
-	return 'https://wa.me/526142800464?text=' . rawurlencode( $message );
+	return 'https://wa.me/' . amex_theme_telefono_whatsapp() . '?text=' . rawurlencode( $message );
 }
 
 /**

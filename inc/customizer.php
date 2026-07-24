@@ -34,8 +34,48 @@ function amex_product_typography_defaults() {
 	);
 }
 
+/**
+ * Teléfono mostrado en el header y el footer (compartido por todo el
+ * sitio). Vive en el Customizer, no en ACF, para que sea editable
+ * desde Apariencia > Personalizar sin depender de ninguna página.
+ */
+function amex_contact_info_defaults() {
+	return array(
+		'site_telefono' => '614 280 0464',
+	);
+}
+
 function amex_customize_register( $wp_customize ) {
 	$defaults = amex_header_customizer_defaults();
+
+	$wp_customize->add_section(
+		'amex_contact_info',
+		array(
+			'title'       => __( 'Información de Contacto', 'amex-machinery' ),
+			'description' => __( 'Teléfono que se muestra en el header y el footer de todo el sitio (también se usa para el link de WhatsApp).', 'amex-machinery' ),
+			'priority'    => 25,
+		)
+	);
+
+	$contact_defaults = amex_contact_info_defaults();
+
+	$wp_customize->add_setting(
+		'site_telefono',
+		array(
+			'default'           => $contact_defaults['site_telefono'],
+			'sanitize_callback' => 'sanitize_text_field',
+			'transport'         => 'refresh',
+		)
+	);
+	$wp_customize->add_control(
+		'site_telefono',
+		array(
+			'type'        => 'text',
+			'section'     => 'amex_contact_info',
+			'label'       => __( 'Teléfono', 'amex-machinery' ),
+			'description' => __( 'Solo los 10 dígitos locales (ej. 614 280 0464) — el +52 de México se agrega automáticamente.', 'amex-machinery' ),
+		)
+	);
 
 	$wp_customize->add_section(
 		'amex_header_design',
