@@ -42,8 +42,8 @@ $cards = array(
 	<div class="container servicios-home__grid">
 		<div class="servicios-home__content">
 			<p class="servicios-home__logo">
-				<span class="servicios-home__logo-word">A<span class="servicios-home__logo-m">M</span>EX</span>
-				<span class="servicios-home__logo-box">MACHINERY</span>
+				<span class="servicios-home__logo-word">Equipos</span>
+				<span class="servicios-home__logo-box">Lonking</span>
 			</p>
 
 			<h2 class="servicios-home__title"><?php echo esc_html( $titulo ); ?></h2>
