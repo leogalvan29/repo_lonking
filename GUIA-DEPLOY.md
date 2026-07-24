@@ -39,34 +39,41 @@ Por eso el repo de git vive ahí, no en la raíz de `public/`.
 
 ## 4. Deploy a DreamHost (subir cambios a producción)
 
-Con SSH ya habilitado en tu VPS/Dedicated de DreamHost, la forma más simple es `rsync` sobre SSH — copia solo lo que cambió, no todo el tema de nuevo cada vez.
+El tema vive en GitHub (`leogalvan29/repo_lonking`), y tanto Local como DreamHost son clones del mismo repo. Eso hace el deploy más simple que rsync: solo hay que subir a GitHub y luego bajar en DreamHost.
 
-```bash
-rsync -avz --exclude '.git' --exclude '.gitignore' \
-  "wp-content/themes/amex-machinery/" \
-  usuario@tuservidor.dreamhost.com:/ruta/a/tu/sitio/wp-content/themes/amex-machinery/
-```
+1. **Subir el commit a GitHub** (desde Local):
+   ```bash
+   cd "wp-content/themes/amex-machinery"
+   git push origin main
+   ```
 
-Reemplaza `usuario@tuservidor.dreamhost.com` y la ruta con tus datos reales de DreamHost.
+2. **Bajar el cambio en DreamHost** (por SSH):
+   ```bash
+   ssh usuario@tuservidor.dreamhostps.com
+   cd /ruta/a/tu/sitio/wp-content/themes/amex-machinery
+   git pull origin main
+   ```
 
-**Antes de correr esto en tu sitio real, dime y lo confirmamos juntos** — es una acción que sí toca producción.
+`git pull` solo trae los archivos que cambiaron (como un rsync inteligente), y deja registro exacto de qué versión del tema está corriendo en producción en todo momento (`git log --oneline`).
+
+**Antes de correr el `git pull` en tu sitio real, dime y lo confirmamos juntos** — es una acción que sí toca producción.
 
 ## 5. Sobre los campos de ACF (acf-json)
 
-Los archivos en `acf-json/` (los campos de Marca, Contacto, Venta, Renta, etc.) viajan con el tema — al hacer el rsync, se copian solos. Cuando ACF detecta que el `.json` es más nuevo que lo que tiene guardado en la base de datos de DreamHost, te va a mostrar un aviso de "Sync available" en **Personalizado > Campos** — dale clic para que tome los cambios. Esto es normal, no es un error.
+Los archivos en `acf-json/` (los campos de Marca, Contacto, Venta, Renta, etc.) viajan con el tema — al hacer `git pull`, se copian solos. Cuando ACF detecta que el `.json` es más nuevo que lo que tiene guardado en la base de datos de DreamHost, te va a mostrar un aviso de "Sync available" en **Personalizado > Campos** — dale clic para que tome los cambios. Esto es normal, no es un error.
 
 ## 6. Qué NO se sincroniza con este método
 
-- **Contenido real** (productos, páginas, textos que captures en wp-admin) — eso vive en la base de datos de cada sitio por separado. Local y DreamHost tienen datos independientes.
-- **Imágenes subidas** (`wp-content/uploads/`) — no está dentro del tema, así que este rsync no las toca.
+- **Contenido real** (productos, páginas, textos que captures en wp-admin, valores del Customizer como el teléfono) — eso vive en la base de datos de cada sitio por separado. Local y DreamHost tienen datos independientes.
+- **Imágenes subidas** (`wp-content/uploads/`) — no está dentro del tema, así que `git pull` no las toca.
 
-Si en algún momento quieres traer contenido/productos de un lado a otro, es un proceso aparte (exportar/importar base de datos, o WP All Import como ya estás usando para Dreamhost).
+Si en algún momento quieres traer contenido/productos de un lado a otro, es un proceso aparte (exportar/importar base de datos, o REST API como usamos para los productos de Lonking).
 
 ## 7. Resumen mental
 
 ```
-Local (pruebas)  --commit-->  historial en git (tu respaldo/versiones)
-                 --rsync/SSH-->  DreamHost (producción, lo que ve la gente)
+Local (pruebas)  --commit + push-->  GitHub (historial y respaldo central)
+                                     GitHub --pull--> DreamHost (producción, lo que ve la gente)
 ```
 
-Local nunca "sabe" de DreamHost automáticamente, y viceversa — el deploy es siempre un paso manual y consciente, nunca automático.
+Local nunca "sabe" de DreamHost automáticamente, y viceversa — el deploy es siempre un paso manual y consciente (push + pull), nunca automático.
