@@ -1,0 +1,372 @@
+{
+    "key": "group_amex_pagina_venta",
+    "title": "Página de Servicio — Venta de Montacargas",
+    "fields": [
+        {
+            "key": "field_amex_venta_tab_hero",
+            "label": "Bloque 1 — Hero",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_amex_venta_hero_titulo",
+            "label": "Título",
+            "name": "venta_hero_titulo",
+            "type": "text",
+            "default_value": "Venta de Montacargas"
+        },
+        {
+            "key": "field_amex_venta_hero_subtitulo",
+            "label": "Subtítulo",
+            "name": "venta_hero_subtitulo",
+            "type": "text",
+            "default_value": "Tu socio estratégico en soluciones de manejo de materiales"
+        },
+        {
+            "key": "field_amex_venta_hero_texto_1",
+            "label": "Párrafo 1",
+            "name": "venta_hero_texto_1",
+            "type": "textarea",
+            "rows": 3,
+            "default_value": "En Amex Machinery ofrecemos un portafolio completo de montacargas, plataformas elevadoras y soluciones de almacén de las marcas líderes a nivel mundial. Nuestro compromiso es brindarte equipos certificados, confiables y eficientes que mantengan tu operación sin interrupciones."
+        },
+        {
+            "key": "field_amex_venta_hero_texto_2",
+            "label": "Párrafo 2",
+            "name": "venta_hero_texto_2",
+            "type": "textarea",
+            "rows": 3,
+            "default_value": "Ya sea que busques un montacargas para aplicaciones ligeras, un equipo especializado para pasillo angosto, o una plataforma de elevación para construcción e industria, contamos con la solución ideal para cada necesidad."
+        },
+        {
+            "key": "field_amex_venta_hero_imagen_fondo",
+            "label": "Imagen de fondo",
+            "name": "venta_hero_imagen_fondo",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_amex_venta_tab_servicio",
+            "label": "Bloque 2 — Servicio y Beneficios",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_amex_venta_servicio_titulo",
+            "label": "Título de la lista de servicio",
+            "name": "venta_servicio_titulo",
+            "type": "text",
+            "default_value": "Nuestro servicio de Venta de Montacargas incluye:"
+        },
+        {
+            "key": "field_amex_venta_feature_1_titulo",
+            "label": "Feature 1 — Título",
+            "name": "venta_feature_1_titulo",
+            "type": "text",
+            "default_value": "Amplia gama de equipos nuevos y seminuevos certificados",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_venta_feature_1_desc",
+            "label": "Feature 1 — Descripción",
+            "name": "venta_feature_1_desc",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Montacargas eléctricos, de combustión, multidireccionales, montados en camión, plataformas de elevación, equipos de almacén y más. Todos pasan rigurosos procesos de inspección para garantizar su óptimo funcionamiento.",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_venta_feature_2_titulo",
+            "label": "Feature 2 — Título",
+            "name": "venta_feature_2_titulo",
+            "type": "text",
+            "default_value": "Asesoría personalizada:",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_venta_feature_2_desc",
+            "label": "Feature 2 — Descripción",
+            "name": "venta_feature_2_desc",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Te ayudamos a elegir el equipo adecuado según tu industria, capacidad de carga requerida, nivel de operación y presupuesto. Nuestros especialistas conocen las normas de seguridad aplicables a cada sector.",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_venta_feature_3_titulo",
+            "label": "Feature 3 — Título",
+            "name": "venta_feature_3_titulo",
+            "type": "text",
+            "default_value": "Planes financieros flexibles",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_venta_feature_3_desc",
+            "label": "Feature 3 — Descripción",
+            "name": "venta_feature_3_desc",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Opciones de compra directa, crédito y arrendamiento para optimizar tu inversión en cualquier tipo de equipo, desde montacargas hasta plataformas especializadas.",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_venta_feature_4_titulo",
+            "label": "Feature 4 — Título",
+            "name": "venta_feature_4_titulo",
+            "type": "text",
+            "default_value": "Garantía Amex 360",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_venta_feature_4_desc",
+            "label": "Feature 4 — Descripción",
+            "name": "venta_feature_4_desc",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Respaldo completo con refacciones originales, repuestos originales, servicio técnico especializado en sistema hidráulico y programas de mantenimiento preventivo para maximizar la vida útil de tu equipo.",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_venta_feature_5_titulo",
+            "label": "Feature 5 — Título",
+            "name": "venta_feature_5_titulo",
+            "type": "text",
+            "default_value": "Disponibilidad inmediata",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_venta_feature_5_desc",
+            "label": "Feature 5 — Descripción",
+            "name": "venta_feature_5_desc",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Inventario estratégico de equipos listos para entrega en México, incluyendo toda nuestra gama de montacargas y equipos especializados.",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_venta_cta1_texto",
+            "label": "Texto botón 1 (usados)",
+            "name": "venta_cta1_texto",
+            "type": "text",
+            "default_value": "Ver equipos usados",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_venta_cta2_texto",
+            "label": "Texto botón 2 (nuevos)",
+            "name": "venta_cta2_texto",
+            "type": "text",
+            "default_value": "Ver equipos nuevos",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_venta_beneficios_titulo",
+            "label": "Título de beneficios",
+            "name": "venta_beneficios_titulo",
+            "type": "text",
+            "default_value": "Beneficios para tu empresa"
+        },
+        {
+            "key": "field_amex_venta_beneficio_1",
+            "label": "Beneficio 1",
+            "name": "venta_beneficio_1",
+            "type": "text",
+            "default_value": "Reducción de costos operativos con equipos de alta eficiencia energética que cumplen con todas las normativas vigentes."
+        },
+        {
+            "key": "field_amex_venta_beneficio_2",
+            "label": "Beneficio 2",
+            "name": "venta_beneficio_2",
+            "type": "text",
+            "default_value": "Mayor seguridad y productividad en tu operación gracias a equipos de punta y mantenimiento preventivo programado."
+        },
+        {
+            "key": "field_amex_venta_beneficio_3",
+            "label": "Beneficio 3",
+            "name": "venta_beneficio_3",
+            "type": "text",
+            "default_value": "Equipos de marcas líderes con presencia global y soporte local, respaldados con refacciones originales siempre disponibles."
+        },
+        {
+            "key": "field_amex_venta_beneficio_4",
+            "label": "Beneficio 4",
+            "name": "venta_beneficio_4",
+            "type": "text",
+            "default_value": "Un solo proveedor confiable para venta, renta, refacciones y servicio con atención personalizada en cada etapa."
+        },
+        {
+            "key": "field_amex_venta_beneficios_cta_texto",
+            "label": "Texto del botón de beneficios",
+            "name": "venta_beneficios_cta_texto",
+            "type": "text",
+            "default_value": "Contáctanos"
+        },
+        {
+            "key": "field_amex_venta_imagen_1",
+            "label": "Imagen 1 (columna derecha, arriba)",
+            "name": "venta_imagen_1",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_venta_imagen_2",
+            "label": "Imagen 2 (columna derecha, abajo)",
+            "name": "venta_imagen_2",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_venta_tab_contacto",
+            "label": "Bloque 3 — Contacto",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_amex_venta_contacto_titulo",
+            "label": "Título",
+            "name": "venta_contacto_titulo",
+            "type": "text",
+            "default_value": "Ponte en contacto con nosotros"
+        },
+        {
+            "key": "field_amex_venta_contacto_imagen",
+            "label": "Imagen (equipo AMEX)",
+            "name": "venta_contacto_imagen",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_amex_venta_tab_faq",
+            "label": "Bloque 3 — FAQ",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_amex_venta_faq_titulo",
+            "label": "Título",
+            "name": "venta_faq_titulo",
+            "type": "text",
+            "default_value": "Preguntas frecuentes"
+        },
+        {
+            "key": "field_amex_venta_faq_imagen_fondo",
+            "label": "Imagen de fondo",
+            "name": "venta_faq_imagen_fondo",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_amex_venta_faq_1_pregunta",
+            "label": "FAQ 1 — Pregunta",
+            "name": "venta_faq_1_pregunta",
+            "type": "text",
+            "default_value": "¿Qué diferencia hay entre un montacargas nuevo y uno remanufacturado?"
+        },
+        {
+            "key": "field_amex_venta_faq_1_respuesta",
+            "label": "FAQ 1 — Respuesta",
+            "name": "venta_faq_1_respuesta",
+            "type": "textarea",
+            "rows": 3
+        },
+        {
+            "key": "field_amex_venta_faq_2_pregunta",
+            "label": "FAQ 2 — Pregunta",
+            "name": "venta_faq_2_pregunta",
+            "type": "text",
+            "default_value": "¿Qué marcas de montacargas manejan y cuál recomiendan?"
+        },
+        {
+            "key": "field_amex_venta_faq_2_respuesta",
+            "label": "FAQ 2 — Respuesta",
+            "name": "venta_faq_2_respuesta",
+            "type": "textarea",
+            "rows": 3
+        },
+        {
+            "key": "field_amex_venta_faq_3_pregunta",
+            "label": "FAQ 3 — Pregunta",
+            "name": "venta_faq_3_pregunta",
+            "type": "text",
+            "default_value": "¿Ofrecen servicio y refacciones en toda la República?"
+        },
+        {
+            "key": "field_amex_venta_faq_3_respuesta",
+            "label": "FAQ 3 — Respuesta",
+            "name": "venta_faq_3_respuesta",
+            "type": "textarea",
+            "rows": 3
+        },
+        {
+            "key": "field_amex_venta_faq_4_pregunta",
+            "label": "FAQ 4 — Pregunta",
+            "name": "venta_faq_4_pregunta",
+            "type": "text",
+            "default_value": "¿Qué incluye la capacitación de operadores?"
+        },
+        {
+            "key": "field_amex_venta_faq_4_respuesta",
+            "label": "FAQ 4 — Respuesta",
+            "name": "venta_faq_4_respuesta",
+            "type": "textarea",
+            "rows": 3
+        },
+        {
+            "key": "field_amex_venta_faq_5_pregunta",
+            "label": "FAQ 5 — Pregunta",
+            "name": "venta_faq_5_pregunta",
+            "type": "text",
+            "default_value": "¿Qué opciones de financiamiento ofrecen?"
+        },
+        {
+            "key": "field_amex_venta_faq_5_respuesta",
+            "label": "FAQ 5 — Respuesta",
+            "name": "venta_faq_5_respuesta",
+            "type": "textarea",
+            "rows": 3
+        },
+        {
+            "key": "field_amex_venta_faq_6_pregunta",
+            "label": "FAQ 6 — Pregunta",
+            "name": "venta_faq_6_pregunta",
+            "type": "text",
+            "default_value": "¿Manejan equipos especializados además de montacargas?"
+        },
+        {
+            "key": "field_amex_venta_faq_6_respuesta",
+            "label": "FAQ 6 — Respuesta",
+            "name": "venta_faq_6_respuesta",
+            "type": "textarea",
+            "rows": 3
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-venta.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "excerpt",
+        "discussion",
+        "comments"
+    ],
+    "active": true,
+    "description": "Contenido editable de la página de servicio \"Venta de Montacargas\" (page-venta.php).",
+    "show_in_rest": 0
+}

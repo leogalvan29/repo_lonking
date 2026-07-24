@@ -1,0 +1,400 @@
+{
+    "key": "group_amex_pagina_mantenimiento",
+    "title": "Página de Servicio — Servicio Técnico y Mantenimiento",
+    "fields": [
+        {
+            "key": "field_amex_mantenimiento_tab_hero",
+            "label": "Bloque 1 — Hero",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_amex_mantenimiento_hero_titulo",
+            "label": "Título",
+            "name": "mantenimiento_hero_titulo",
+            "type": "text",
+            "default_value": "Servicio Técnico y Mantenimiento"
+        },
+        {
+            "key": "field_amex_mantenimiento_hero_subtitulo",
+            "label": "Subtítulo",
+            "name": "mantenimiento_hero_subtitulo",
+            "type": "text",
+            "default_value": "Tu equipo siempre disponible, tu operación sin pausas"
+        },
+        {
+            "key": "field_amex_mantenimiento_hero_texto_1",
+            "label": "Párrafo 1",
+            "name": "mantenimiento_hero_texto_1",
+            "type": "textarea",
+            "rows": 3,
+            "default_value": "En Amex Machinery contamos con técnicos certificados y refacciones originales para mantener tu flota de montacargas y equipos especializados funcionando de forma segura y eficiente."
+        },
+        {
+            "key": "field_amex_mantenimiento_hero_texto_2",
+            "label": "Párrafo 2",
+            "name": "mantenimiento_hero_texto_2",
+            "type": "textarea",
+            "rows": 3,
+            "default_value": "Ofrecemos mantenimiento preventivo programado y servicio correctivo rápido, minimizando el tiempo de inactividad de tu operación."
+        },
+        {
+            "key": "field_amex_mantenimiento_hero_imagen_fondo",
+            "label": "Imagen de fondo",
+            "name": "mantenimiento_hero_imagen_fondo",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_amex_mantenimiento_tab_servicio",
+            "label": "Bloque 2 — Servicio y Beneficios",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_amex_mantenimiento_servicio_titulo",
+            "label": "Título de la lista de servicio",
+            "name": "mantenimiento_servicio_titulo",
+            "type": "text",
+            "default_value": "Nuestro servicio de Mantenimiento incluye:"
+        },
+        {
+            "key": "field_amex_mantenimiento_feature_1_titulo",
+            "label": "Feature 1 — Título",
+            "name": "mantenimiento_feature_1_titulo",
+            "type": "text",
+            "default_value": "Mantenimiento preventivo programado",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_mantenimiento_feature_1_desc",
+            "label": "Feature 1 — Descripción",
+            "name": "mantenimiento_feature_1_desc",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Revisiones periódicas planeadas para detectar y corregir fallas antes de que afecten tu operación.",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_mantenimiento_feature_2_titulo",
+            "label": "Feature 2 — Título",
+            "name": "mantenimiento_feature_2_titulo",
+            "type": "text",
+            "default_value": "Servicio correctivo especializado",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_mantenimiento_feature_2_desc",
+            "label": "Feature 2 — Descripción",
+            "name": "mantenimiento_feature_2_desc",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Diagnóstico y reparación rápida ante cualquier falla, con técnicos capacitados en las principales marcas del mercado.",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_mantenimiento_feature_3_titulo",
+            "label": "Feature 3 — Título",
+            "name": "mantenimiento_feature_3_titulo",
+            "type": "text",
+            "default_value": "Técnicos certificados",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_mantenimiento_feature_3_desc",
+            "label": "Feature 3 — Descripción",
+            "name": "mantenimiento_feature_3_desc",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Personal capacitado directamente por los fabricantes, con conocimiento profundo de sistemas hidráulicos, eléctricos y de combustión.",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_mantenimiento_feature_4_titulo",
+            "label": "Feature 4 — Título",
+            "name": "mantenimiento_feature_4_titulo",
+            "type": "text",
+            "default_value": "Refacciones originales",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_mantenimiento_feature_4_desc",
+            "label": "Feature 4 — Descripción",
+            "name": "mantenimiento_feature_4_desc",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Stock permanente de refacciones originales para minimizar tiempos de espera en cada servicio.",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_mantenimiento_feature_5_titulo",
+            "label": "Feature 5 — Título",
+            "name": "mantenimiento_feature_5_titulo",
+            "type": "text",
+            "default_value": "Cobertura en toda la República",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_mantenimiento_feature_5_desc",
+            "label": "Feature 5 — Descripción",
+            "name": "mantenimiento_feature_5_desc",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Atención técnica en cualquiera de nuestras sucursales o directamente en las instalaciones de tu empresa.",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_mantenimiento_cta1_texto",
+            "label": "Texto botón 1 (usados)",
+            "name": "mantenimiento_cta1_texto",
+            "type": "text",
+            "default_value": "Ver equipos usados",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_mantenimiento_cta2_texto",
+            "label": "Texto botón 2 (nuevos)",
+            "name": "mantenimiento_cta2_texto",
+            "type": "text",
+            "default_value": "Ver equipos nuevos",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_mantenimiento_beneficios_titulo",
+            "label": "Título de beneficios",
+            "name": "mantenimiento_beneficios_titulo",
+            "type": "text",
+            "default_value": "Beneficios para tu empresa"
+        },
+        {
+            "key": "field_amex_mantenimiento_beneficio_1",
+            "label": "Beneficio 1",
+            "name": "mantenimiento_beneficio_1",
+            "type": "text",
+            "default_value": "Reduces el tiempo de inactividad no planeado de tu flota."
+        },
+        {
+            "key": "field_amex_mantenimiento_beneficio_2",
+            "label": "Beneficio 2",
+            "name": "mantenimiento_beneficio_2",
+            "type": "text",
+            "default_value": "Alargas la vida útil de tus equipos con mantenimiento adecuado."
+        },
+        {
+            "key": "field_amex_mantenimiento_beneficio_3",
+            "label": "Beneficio 3",
+            "name": "mantenimiento_beneficio_3",
+            "type": "text",
+            "default_value": "Bajas tus costos operativos a largo plazo al evitar fallas mayores."
+        },
+        {
+            "key": "field_amex_mantenimiento_beneficio_4",
+            "label": "Beneficio 4",
+            "name": "mantenimiento_beneficio_4",
+            "type": "text",
+            "default_value": "Tienes un solo proveedor confiable para todo el mantenimiento de tu flota."
+        },
+        {
+            "key": "field_amex_mantenimiento_beneficios_cta_texto",
+            "label": "Texto del botón de beneficios",
+            "name": "mantenimiento_beneficios_cta_texto",
+            "type": "text",
+            "default_value": "Contáctanos"
+        },
+        {
+            "key": "field_amex_mantenimiento_imagen_1",
+            "label": "Imagen 1 (columna derecha, arriba)",
+            "name": "mantenimiento_imagen_1",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_mantenimiento_imagen_2",
+            "label": "Imagen 2 (columna derecha, abajo)",
+            "name": "mantenimiento_imagen_2",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_mantenimiento_tab_contacto",
+            "label": "Bloque 3 — Contacto",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_amex_mantenimiento_contacto_titulo",
+            "label": "Título",
+            "name": "mantenimiento_contacto_titulo",
+            "type": "text",
+            "default_value": "Ponte en contacto con nosotros"
+        },
+        {
+            "key": "field_amex_mantenimiento_contacto_imagen",
+            "label": "Imagen (equipo AMEX)",
+            "name": "mantenimiento_contacto_imagen",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_amex_mantenimiento_tab_faq",
+            "label": "Bloque 3 — FAQ",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_amex_mantenimiento_faq_titulo",
+            "label": "Título",
+            "name": "mantenimiento_faq_titulo",
+            "type": "text",
+            "default_value": "Preguntas frecuentes"
+        },
+        {
+            "key": "field_amex_mantenimiento_faq_imagen_fondo",
+            "label": "Imagen de fondo",
+            "name": "mantenimiento_faq_imagen_fondo",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_amex_mantenimiento_faq_1_pregunta",
+            "label": "FAQ 1 — Pregunta",
+            "name": "mantenimiento_faq_1_pregunta",
+            "type": "text",
+            "default_value": "¿Cada cuánto se recomienda el mantenimiento preventivo?"
+        },
+        {
+            "key": "field_amex_mantenimiento_faq_1_respuesta",
+            "label": "FAQ 1 — Respuesta",
+            "name": "mantenimiento_faq_1_respuesta",
+            "type": "textarea",
+            "rows": 3
+        },
+        {
+            "key": "field_amex_mantenimiento_faq_2_pregunta",
+            "label": "FAQ 2 — Pregunta",
+            "name": "mantenimiento_faq_2_pregunta",
+            "type": "text",
+            "default_value": "¿Atienden todas las marcas de montacargas?"
+        },
+        {
+            "key": "field_amex_mantenimiento_faq_2_respuesta",
+            "label": "FAQ 2 — Respuesta",
+            "name": "mantenimiento_faq_2_respuesta",
+            "type": "textarea",
+            "rows": 3
+        },
+        {
+            "key": "field_amex_mantenimiento_faq_3_pregunta",
+            "label": "FAQ 3 — Pregunta",
+            "name": "mantenimiento_faq_3_pregunta",
+            "type": "text",
+            "default_value": "¿Ofrecen contratos de mantenimiento anual?"
+        },
+        {
+            "key": "field_amex_mantenimiento_faq_3_respuesta",
+            "label": "FAQ 3 — Respuesta",
+            "name": "mantenimiento_faq_3_respuesta",
+            "type": "textarea",
+            "rows": 3
+        },
+        {
+            "key": "field_amex_mantenimiento_faq_4_pregunta",
+            "label": "FAQ 4 — Pregunta",
+            "name": "mantenimiento_faq_4_pregunta",
+            "type": "text",
+            "default_value": "¿Cuánto tiempo tarda una visita de servicio?"
+        },
+        {
+            "key": "field_amex_mantenimiento_faq_4_respuesta",
+            "label": "FAQ 4 — Respuesta",
+            "name": "mantenimiento_faq_4_respuesta",
+            "type": "textarea",
+            "rows": 3
+        },
+        {
+            "key": "field_amex_mantenimiento_faq_5_pregunta",
+            "label": "FAQ 5 — Pregunta",
+            "name": "mantenimiento_faq_5_pregunta",
+            "type": "text",
+            "default_value": "¿Manejan refacciones originales?"
+        },
+        {
+            "key": "field_amex_mantenimiento_faq_5_respuesta",
+            "label": "FAQ 5 — Respuesta",
+            "name": "mantenimiento_faq_5_respuesta",
+            "type": "textarea",
+            "rows": 3
+        },
+        {
+            "key": "field_amex_mantenimiento_faq_6_pregunta",
+            "label": "FAQ 6 — Pregunta",
+            "name": "mantenimiento_faq_6_pregunta",
+            "type": "text",
+            "default_value": "¿Tienen cobertura en mi ciudad?"
+        },
+        {
+            "key": "field_amex_mantenimiento_faq_6_respuesta",
+            "label": "FAQ 6 — Respuesta",
+            "name": "mantenimiento_faq_6_respuesta",
+            "type": "textarea",
+            "rows": 3
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-mantenimiento.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "excerpt",
+        "discussion",
+        "comments"
+    ],
+    "active": true,
+    "description": "Contenido editable de la página de servicio \"Servicio Técnico y Mantenimiento\" (page-mantenimiento.php).",
+    "show_in_rest": 0
+}

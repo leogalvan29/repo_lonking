@@ -1,0 +1,400 @@
+{
+    "key": "group_amex_pagina_capacitacion",
+    "title": "Página de Servicio — Capacitación y Seguridad",
+    "fields": [
+        {
+            "key": "field_amex_capacitacion_tab_hero",
+            "label": "Bloque 1 — Hero",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_amex_capacitacion_hero_titulo",
+            "label": "Título",
+            "name": "capacitacion_hero_titulo",
+            "type": "text",
+            "default_value": "Capacitación y Seguridad"
+        },
+        {
+            "key": "field_amex_capacitacion_hero_subtitulo",
+            "label": "Subtítulo",
+            "name": "capacitacion_hero_subtitulo",
+            "type": "text",
+            "default_value": "Operadores capacitados, operaciones más seguras"
+        },
+        {
+            "key": "field_amex_capacitacion_hero_texto_1",
+            "label": "Párrafo 1",
+            "name": "capacitacion_hero_texto_1",
+            "type": "textarea",
+            "rows": 3,
+            "default_value": "En Amex Machinery capacitamos a tus operadores para el manejo seguro y eficiente de montacargas y equipos especializados, cumpliendo con las normativas de seguridad vigentes."
+        },
+        {
+            "key": "field_amex_capacitacion_hero_texto_2",
+            "label": "Párrafo 2",
+            "name": "capacitacion_hero_texto_2",
+            "type": "textarea",
+            "rows": 3,
+            "default_value": "Reduce accidentes, protege a tu personal y mejora la productividad de tu operación con operadores certificados."
+        },
+        {
+            "key": "field_amex_capacitacion_hero_imagen_fondo",
+            "label": "Imagen de fondo",
+            "name": "capacitacion_hero_imagen_fondo",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_amex_capacitacion_tab_servicio",
+            "label": "Bloque 2 — Servicio y Beneficios",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_amex_capacitacion_servicio_titulo",
+            "label": "Título de la lista de servicio",
+            "name": "capacitacion_servicio_titulo",
+            "type": "text",
+            "default_value": "Nuestro servicio de Capacitación y Seguridad incluye:"
+        },
+        {
+            "key": "field_amex_capacitacion_feature_1_titulo",
+            "label": "Feature 1 — Título",
+            "name": "capacitacion_feature_1_titulo",
+            "type": "text",
+            "default_value": "Certificación de operadores",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_capacitacion_feature_1_desc",
+            "label": "Feature 1 — Descripción",
+            "name": "capacitacion_feature_1_desc",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Programas de certificación que avalan el manejo seguro y correcto de montacargas y equipos especializados.",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_capacitacion_feature_2_titulo",
+            "label": "Feature 2 — Título",
+            "name": "capacitacion_feature_2_titulo",
+            "type": "text",
+            "default_value": "Cursos teórico-prácticos",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_capacitacion_feature_2_desc",
+            "label": "Feature 2 — Descripción",
+            "name": "capacitacion_feature_2_desc",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Capacitación que combina fundamentos teóricos con práctica real sobre el equipo.",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_capacitacion_feature_3_titulo",
+            "label": "Feature 3 — Título",
+            "name": "capacitacion_feature_3_titulo",
+            "type": "text",
+            "default_value": "Normativas de seguridad vigentes",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_capacitacion_feature_3_desc",
+            "label": "Feature 3 — Descripción",
+            "name": "capacitacion_feature_3_desc",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Cursos alineados a las normas oficiales de seguridad e higiene aplicables en México.",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_capacitacion_feature_4_titulo",
+            "label": "Feature 4 — Título",
+            "name": "capacitacion_feature_4_titulo",
+            "type": "text",
+            "default_value": "Capacitación en sitio",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_capacitacion_feature_4_desc",
+            "label": "Feature 4 — Descripción",
+            "name": "capacitacion_feature_4_desc",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Llevamos la capacitación directamente a tus instalaciones, adaptada a tu operación real.",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_capacitacion_feature_5_titulo",
+            "label": "Feature 5 — Título",
+            "name": "capacitacion_feature_5_titulo",
+            "type": "text",
+            "default_value": "Renovación y actualización",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_capacitacion_feature_5_desc",
+            "label": "Feature 5 — Descripción",
+            "name": "capacitacion_feature_5_desc",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Cursos de refuerzo periódicos para mantener vigente la certificación de tus operadores.",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_capacitacion_cta1_texto",
+            "label": "Texto botón 1 (usados)",
+            "name": "capacitacion_cta1_texto",
+            "type": "text",
+            "default_value": "Ver equipos usados",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_capacitacion_cta2_texto",
+            "label": "Texto botón 2 (nuevos)",
+            "name": "capacitacion_cta2_texto",
+            "type": "text",
+            "default_value": "Ver equipos nuevos",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_capacitacion_beneficios_titulo",
+            "label": "Título de beneficios",
+            "name": "capacitacion_beneficios_titulo",
+            "type": "text",
+            "default_value": "Beneficios para tu empresa"
+        },
+        {
+            "key": "field_amex_capacitacion_beneficio_1",
+            "label": "Beneficio 1",
+            "name": "capacitacion_beneficio_1",
+            "type": "text",
+            "default_value": "Reduces accidentes y riesgos laborales en tu operación."
+        },
+        {
+            "key": "field_amex_capacitacion_beneficio_2",
+            "label": "Beneficio 2",
+            "name": "capacitacion_beneficio_2",
+            "type": "text",
+            "default_value": "Cumples con las normativas de seguridad aplicables."
+        },
+        {
+            "key": "field_amex_capacitacion_beneficio_3",
+            "label": "Beneficio 3",
+            "name": "capacitacion_beneficio_3",
+            "type": "text",
+            "default_value": "Aumentas la eficiencia operativa de tus equipos."
+        },
+        {
+            "key": "field_amex_capacitacion_beneficio_4",
+            "label": "Beneficio 4",
+            "name": "capacitacion_beneficio_4",
+            "type": "text",
+            "default_value": "Disminuyes el desgaste y daño al equipo por mal manejo."
+        },
+        {
+            "key": "field_amex_capacitacion_beneficios_cta_texto",
+            "label": "Texto del botón de beneficios",
+            "name": "capacitacion_beneficios_cta_texto",
+            "type": "text",
+            "default_value": "Contáctanos"
+        },
+        {
+            "key": "field_amex_capacitacion_imagen_1",
+            "label": "Imagen 1 (columna derecha, arriba)",
+            "name": "capacitacion_imagen_1",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_capacitacion_imagen_2",
+            "label": "Imagen 2 (columna derecha, abajo)",
+            "name": "capacitacion_imagen_2",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_capacitacion_tab_contacto",
+            "label": "Bloque 3 — Contacto",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_amex_capacitacion_contacto_titulo",
+            "label": "Título",
+            "name": "capacitacion_contacto_titulo",
+            "type": "text",
+            "default_value": "Ponte en contacto con nosotros"
+        },
+        {
+            "key": "field_amex_capacitacion_contacto_imagen",
+            "label": "Imagen (equipo AMEX)",
+            "name": "capacitacion_contacto_imagen",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_amex_capacitacion_tab_faq",
+            "label": "Bloque 3 — FAQ",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_amex_capacitacion_faq_titulo",
+            "label": "Título",
+            "name": "capacitacion_faq_titulo",
+            "type": "text",
+            "default_value": "Preguntas frecuentes"
+        },
+        {
+            "key": "field_amex_capacitacion_faq_imagen_fondo",
+            "label": "Imagen de fondo",
+            "name": "capacitacion_faq_imagen_fondo",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_amex_capacitacion_faq_1_pregunta",
+            "label": "FAQ 1 — Pregunta",
+            "name": "capacitacion_faq_1_pregunta",
+            "type": "text",
+            "default_value": "¿Cuánto dura la certificación de un operador?"
+        },
+        {
+            "key": "field_amex_capacitacion_faq_1_respuesta",
+            "label": "FAQ 1 — Respuesta",
+            "name": "capacitacion_faq_1_respuesta",
+            "type": "textarea",
+            "rows": 3
+        },
+        {
+            "key": "field_amex_capacitacion_faq_2_pregunta",
+            "label": "FAQ 2 — Pregunta",
+            "name": "capacitacion_faq_2_pregunta",
+            "type": "text",
+            "default_value": "¿La capacitación es en sus instalaciones o en las nuestras?"
+        },
+        {
+            "key": "field_amex_capacitacion_faq_2_respuesta",
+            "label": "FAQ 2 — Respuesta",
+            "name": "capacitacion_faq_2_respuesta",
+            "type": "textarea",
+            "rows": 3
+        },
+        {
+            "key": "field_amex_capacitacion_faq_3_pregunta",
+            "label": "FAQ 3 — Pregunta",
+            "name": "capacitacion_faq_3_pregunta",
+            "type": "text",
+            "default_value": "¿Qué normativas cubre la certificación?"
+        },
+        {
+            "key": "field_amex_capacitacion_faq_3_respuesta",
+            "label": "FAQ 3 — Respuesta",
+            "name": "capacitacion_faq_3_respuesta",
+            "type": "textarea",
+            "rows": 3
+        },
+        {
+            "key": "field_amex_capacitacion_faq_4_pregunta",
+            "label": "FAQ 4 — Pregunta",
+            "name": "capacitacion_faq_4_pregunta",
+            "type": "text",
+            "default_value": "¿Cada cuánto se debe renovar la certificación?"
+        },
+        {
+            "key": "field_amex_capacitacion_faq_4_respuesta",
+            "label": "FAQ 4 — Respuesta",
+            "name": "capacitacion_faq_4_respuesta",
+            "type": "textarea",
+            "rows": 3
+        },
+        {
+            "key": "field_amex_capacitacion_faq_5_pregunta",
+            "label": "FAQ 5 — Pregunta",
+            "name": "capacitacion_faq_5_pregunta",
+            "type": "text",
+            "default_value": "¿Cuántos operadores pueden capacitarse por sesión?"
+        },
+        {
+            "key": "field_amex_capacitacion_faq_5_respuesta",
+            "label": "FAQ 5 — Respuesta",
+            "name": "capacitacion_faq_5_respuesta",
+            "type": "textarea",
+            "rows": 3
+        },
+        {
+            "key": "field_amex_capacitacion_faq_6_pregunta",
+            "label": "FAQ 6 — Pregunta",
+            "name": "capacitacion_faq_6_pregunta",
+            "type": "text",
+            "default_value": "¿Entregan alguna constancia oficial?"
+        },
+        {
+            "key": "field_amex_capacitacion_faq_6_respuesta",
+            "label": "FAQ 6 — Respuesta",
+            "name": "capacitacion_faq_6_respuesta",
+            "type": "textarea",
+            "rows": 3
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-capacitacion.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "excerpt",
+        "discussion",
+        "comments"
+    ],
+    "active": true,
+    "description": "Contenido editable de la página de servicio \"Capacitación y Seguridad\" (page-capacitacion.php).",
+    "show_in_rest": 0
+}

@@ -1,0 +1,686 @@
+{
+    "key": "group_amex_pagina_contacto",
+    "title": "Página de Contacto",
+    "fields": [
+        {
+            "key": "field_amex_contacto_tab_hero",
+            "label": "Hero",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_amex_hero_titulo",
+            "label": "Título",
+            "name": "hero_titulo",
+            "type": "text",
+            "default_value": "Más de 35 años optimizando tu productividad operacional"
+        },
+        {
+            "key": "field_amex_hero_subtitulo",
+            "label": "Subtítulo",
+            "name": "hero_subtitulo",
+            "type": "textarea",
+            "rows": 3,
+            "default_value": "Desde maquiladoras hasta Centros de Distribución, entendemos los retos únicos de cada industria. Cuéntanos tu desafío para ayudarte a diseñar una solución personalizada."
+        },
+        {
+            "key": "field_amex_contacto_tab_form",
+            "label": "Formulario",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_amex_form_titulo",
+            "label": "Título del formulario",
+            "name": "form_titulo",
+            "type": "text",
+            "default_value": "Ponte en contacto con nosotros"
+        },
+        {
+            "key": "field_amex_form_subtitulo",
+            "label": "Subtítulo del formulario",
+            "name": "form_subtitulo",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Platícanos sobre tu operación y retos para poderte ofrecer una asesoría, sin compromiso."
+        },
+        {
+            "key": "field_amex_form_nota",
+            "label": "Nota debajo del botón",
+            "name": "form_nota",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Una vez que completes el formulario, nuestro equipo se comunicará contigo a la brevedad posible para conocer tus necesidades específicas y orientarte en todo el proceso de selección."
+        },
+        {
+            "key": "field_amex_contacto_tab_directo",
+            "label": "Contacto directo",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_amex_telefono",
+            "label": "Teléfono",
+            "name": "telefono",
+            "type": "text",
+            "instructions": "Solo los 10 dígitos locales (p. ej. 6142800464 o 614 280 0464) — el +52 de México se agrega automáticamente para los links de llamada y WhatsApp.",
+            "default_value": "614 280 0464"
+        },
+        {
+            "key": "field_amex_whatsapp_mensaje",
+            "label": "Mensaje predefinido de WhatsApp",
+            "name": "whatsapp_mensaje",
+            "type": "text",
+            "default_value": "Necesito más información sobre AMEX Machinery"
+        },
+        {
+            "key": "field_amex_facebook_url",
+            "label": "Facebook URL",
+            "name": "facebook_url",
+            "type": "url",
+            "default_value": "https://www.facebook.com/amexmachinery/"
+        },
+        {
+            "key": "field_amex_instagram_url",
+            "label": "Instagram URL",
+            "name": "instagram_url",
+            "type": "url",
+            "default_value": "https://www.instagram.com/amexmachinery"
+        },
+        {
+            "key": "field_amex_linkedin_url",
+            "label": "LinkedIn URL",
+            "name": "linkedin_url",
+            "type": "url",
+            "default_value": "https://www.linkedin.com/company/amex-machinery/"
+        },
+        {
+            "key": "field_amex_contacto_tab_sucursales",
+            "label": "Sucursales",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_amex_sucursal_1_nombre",
+            "label": "Sucursal 1 — Nombre",
+            "name": "sucursal_1_nombre",
+            "type": "text",
+            "default_value": "AMEX Culiacán Matriz",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_sucursal_1_direccion",
+            "label": "Sucursal 1 — Dirección",
+            "name": "sucursal_1_direccion",
+            "type": "text",
+            "default_value": "Blvd. Emiliano Zapata 4701, Fraccionamiento Villa Serena, 80159 Culiacán Rosales, Sin.",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_sucursal_2_nombre",
+            "label": "Sucursal 2 — Nombre",
+            "name": "sucursal_2_nombre",
+            "type": "text",
+            "default_value": "AMEX La Barca",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_sucursal_2_direccion",
+            "label": "Sucursal 2 — Dirección",
+            "name": "sucursal_2_direccion",
+            "type": "text",
+            "default_value": "Lázaro Cárdenas #131 B, Col. Centro, 47910 La Barca, Jal.",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_sucursal_3_nombre",
+            "label": "Sucursal 3 — Nombre",
+            "name": "sucursal_3_nombre",
+            "type": "text",
+            "default_value": "AMEX Mérida Caucel",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_sucursal_3_direccion",
+            "label": "Sucursal 3 — Dirección",
+            "name": "sucursal_3_direccion",
+            "type": "text",
+            "default_value": "Tab Cat 45084 45085, Bod. Inmobiliaria RBR Caucel, 97314 Mérida, Yuc.",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_sucursal_4_nombre",
+            "label": "Sucursal 4 — Nombre",
+            "name": "sucursal_4_nombre",
+            "type": "text",
+            "default_value": "AMEX Mérida Centralia",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_sucursal_4_direccion",
+            "label": "Sucursal 4 — Dirección",
+            "name": "sucursal_4_direccion",
+            "type": "text",
+            "default_value": "Centralia Mérida, Km 47 Periférico Lic. Manuel Berzunza, Local 115, Col. Paseos de Tixcacal, 97314 Mérida, Yuc.",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_sucursal_5_nombre",
+            "label": "Sucursal 5 — Nombre",
+            "name": "sucursal_5_nombre",
+            "type": "text",
+            "wrapper": {
+                "width": "50"
+            },
+            "default_value": "AMEX Puebla"
+        },
+        {
+            "key": "field_amex_sucursal_5_direccion",
+            "label": "Sucursal 5 — Dirección",
+            "name": "sucursal_5_direccion",
+            "type": "text",
+            "wrapper": {
+                "width": "50"
+            },
+            "default_value": "Galeana No. 59, San Lorenzo Amecatla, 72710 Puebla, Pue."
+        },
+        {
+            "key": "field_amex_sucursal_6_nombre",
+            "label": "Sucursal 6 — Nombre",
+            "name": "sucursal_6_nombre",
+            "type": "text",
+            "wrapper": {
+                "width": "50"
+            },
+            "default_value": "AMEX Querétaro"
+        },
+        {
+            "key": "field_amex_sucursal_6_direccion",
+            "label": "Sucursal 6 — Dirección",
+            "name": "sucursal_6_direccion",
+            "type": "text",
+            "wrapper": {
+                "width": "50"
+            },
+            "default_value": "Carretera Estatal 200, Km 16+079, Col. San Isidro, Interior 93, El Marqués, 76249 Querétaro, Qro."
+        },
+        {
+            "key": "field_amex_sucursal_7_nombre",
+            "label": "Sucursal 7 — Nombre",
+            "name": "sucursal_7_nombre",
+            "type": "text",
+            "wrapper": {
+                "width": "50"
+            },
+            "default_value": "AMEX Tijuana"
+        },
+        {
+            "key": "field_amex_sucursal_7_direccion",
+            "label": "Sucursal 7 — Dirección",
+            "name": "sucursal_7_direccion",
+            "type": "text",
+            "wrapper": {
+                "width": "50"
+            },
+            "default_value": "Blvd. Cucapah #21847, entre Las Torres y Bugambilias, Col. Villa Fontana, Lomas del Matamoros, 22206 Tijuana, B.C."
+        },
+        {
+            "key": "field_amex_sucursal_8_nombre",
+            "label": "Sucursal 8 — Nombre",
+            "name": "sucursal_8_nombre",
+            "type": "text",
+            "wrapper": {
+                "width": "50"
+            },
+            "default_value": "AMEX La Paz"
+        },
+        {
+            "key": "field_amex_sucursal_8_direccion",
+            "label": "Sucursal 8 — Dirección",
+            "name": "sucursal_8_direccion",
+            "type": "text",
+            "wrapper": {
+                "width": "50"
+            },
+            "default_value": "Carretera Transpeninsular al Sur Km 8, Col. Tabachines, 23084 La Paz, B.C.S."
+        },
+        {
+            "key": "field_amex_sucursal_9_nombre",
+            "label": "Sucursal 9 — Nombre",
+            "name": "sucursal_9_nombre",
+            "type": "text",
+            "wrapper": {
+                "width": "50"
+            },
+            "default_value": "AMEX León Guanajuato"
+        },
+        {
+            "key": "field_amex_sucursal_9_direccion",
+            "label": "Sucursal 9 — Dirección",
+            "name": "sucursal_9_direccion",
+            "type": "text",
+            "wrapper": {
+                "width": "50"
+            },
+            "default_value": "Omicrón 301, Industrial Delta, 37549 León de los Aldama, Gto."
+        },
+        {
+            "key": "field_amex_sucursal_10_nombre",
+            "label": "Sucursal 10 — Nombre",
+            "name": "sucursal_10_nombre",
+            "type": "text",
+            "wrapper": {
+                "width": "50"
+            },
+            "default_value": "AMEX Monterrey"
+        },
+        {
+            "key": "field_amex_sucursal_10_direccion",
+            "label": "Sucursal 10 — Dirección",
+            "name": "sucursal_10_direccion",
+            "type": "text",
+            "wrapper": {
+                "width": "50"
+            },
+            "default_value": "Blvd. José López Portillo 333, Bodega 107, Col. Valles del Canadá, Gral. Escobedo, N.L., C.P. 66220"
+        },
+        {
+            "key": "field_amex_sucursal_11_nombre",
+            "label": "Sucursal 11 — Nombre",
+            "name": "sucursal_11_nombre",
+            "type": "text",
+            "wrapper": {
+                "width": "50"
+            },
+            "default_value": "AMEX Guaymas"
+        },
+        {
+            "key": "field_amex_sucursal_11_direccion",
+            "label": "Sucursal 11 — Dirección",
+            "name": "sucursal_11_direccion",
+            "type": "text",
+            "wrapper": {
+                "width": "50"
+            },
+            "default_value": "99B California y Luis Encinas Km 1982, Carr. Internacional, Petrolera, 85456 Guaymas, Son."
+        },
+        {
+            "key": "field_amex_sucursal_12_nombre",
+            "label": "Sucursal 12 — Nombre",
+            "name": "sucursal_12_nombre",
+            "type": "text",
+            "wrapper": {
+                "width": "50"
+            },
+            "default_value": "AMEX Hermosillo"
+        },
+        {
+            "key": "field_amex_sucursal_12_direccion",
+            "label": "Sucursal 12 — Dirección",
+            "name": "sucursal_12_direccion",
+            "type": "text",
+            "wrapper": {
+                "width": "50"
+            },
+            "default_value": "Av. Sahuaripa 27, Col. Central de Abastos, 83283 Hermosillo, Son."
+        },
+        {
+            "key": "field_amex_sucursal_13_nombre",
+            "label": "Sucursal 13 — Nombre",
+            "name": "sucursal_13_nombre",
+            "type": "text",
+            "wrapper": {
+                "width": "50"
+            },
+            "default_value": "AMEX Los Mochis"
+        },
+        {
+            "key": "field_amex_sucursal_13_direccion",
+            "label": "Sucursal 13 — Dirección",
+            "name": "sucursal_13_direccion",
+            "type": "text",
+            "wrapper": {
+                "width": "50"
+            },
+            "default_value": "21 de Marzo 569 Pte. B-2, Jiquilpan, Los Mochis, Sin."
+        },
+        {
+            "key": "field_amex_sucursal_14_nombre",
+            "label": "Sucursal 14 — Nombre",
+            "name": "sucursal_14_nombre",
+            "type": "text",
+            "wrapper": {
+                "width": "50"
+            },
+            "default_value": "AMEX Torreón"
+        },
+        {
+            "key": "field_amex_sucursal_14_direccion",
+            "label": "Sucursal 14 — Dirección",
+            "name": "sucursal_14_direccion",
+            "type": "text",
+            "wrapper": {
+                "width": "50"
+            },
+            "default_value": "Antigua Carretera Torreón - San Pedro No. 150, Loc. Ejido Ana, C.P. 27070"
+        },
+        {
+            "key": "field_amex_sucursal_1_telefono",
+            "label": "Sucursal 1 — Teléfono",
+            "name": "sucursal_1_telefono",
+            "type": "text",
+            "default_value": "667 502 7907",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_sucursal_1_encargado",
+            "label": "Sucursal 1 — Encargado",
+            "name": "sucursal_1_encargado",
+            "type": "text",
+            "default_value": "Carlos Baltazar Castro",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_sucursal_2_telefono",
+            "label": "Sucursal 2 — Teléfono",
+            "name": "sucursal_2_telefono",
+            "type": "text",
+            "default_value": "393 158 0062",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_sucursal_2_encargado",
+            "label": "Sucursal 2 — Encargado",
+            "name": "sucursal_2_encargado",
+            "type": "text",
+            "default_value": "Luis Antonio Cabrera Amezcua",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_sucursal_3_telefono",
+            "label": "Sucursal 3 — Teléfono",
+            "name": "sucursal_3_telefono",
+            "type": "text",
+            "default_value": "999 649 8838",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_sucursal_3_encargado",
+            "label": "Sucursal 3 — Encargado",
+            "name": "sucursal_3_encargado",
+            "type": "text",
+            "default_value": "Ivan Galindo Fabian",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_sucursal_4_telefono",
+            "label": "Sucursal 4 — Teléfono",
+            "name": "sucursal_4_telefono",
+            "type": "text",
+            "default_value": "999 649 8838",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_sucursal_4_encargado",
+            "label": "Sucursal 4 — Encargado",
+            "name": "sucursal_4_encargado",
+            "type": "text",
+            "default_value": "Ivan Galindo Fabian",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_sucursal_5_telefono",
+            "label": "Sucursal 5 — Teléfono",
+            "name": "sucursal_5_telefono",
+            "type": "text",
+            "default_value": "221 533 9788",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_sucursal_5_encargado",
+            "label": "Sucursal 5 — Encargado",
+            "name": "sucursal_5_encargado",
+            "type": "text",
+            "default_value": "Adrian Lopez Parra",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_sucursal_6_telefono",
+            "label": "Sucursal 6 — Teléfono",
+            "name": "sucursal_6_telefono",
+            "type": "text",
+            "default_value": "442 503 9909",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_sucursal_6_encargado",
+            "label": "Sucursal 6 — Encargado",
+            "name": "sucursal_6_encargado",
+            "type": "text",
+            "default_value": "Brandon Omar Rojas Melendez",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_sucursal_7_telefono",
+            "label": "Sucursal 7 — Teléfono",
+            "name": "sucursal_7_telefono",
+            "type": "text",
+            "default_value": "663 322 4186",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_sucursal_7_encargado",
+            "label": "Sucursal 7 — Encargado",
+            "name": "sucursal_7_encargado",
+            "type": "text",
+            "default_value": "Maria Cecilia Castro",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_sucursal_8_telefono",
+            "label": "Sucursal 8 — Teléfono",
+            "name": "sucursal_8_telefono",
+            "type": "text",
+            "default_value": "612 104 2639",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_sucursal_8_encargado",
+            "label": "Sucursal 8 — Encargado",
+            "name": "sucursal_8_encargado",
+            "type": "text",
+            "default_value": "Luis Alberto Bañuelos Miramontes",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_sucursal_9_telefono",
+            "label": "Sucursal 9 — Teléfono",
+            "name": "sucursal_9_telefono",
+            "type": "text",
+            "default_value": "442 503 9909",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_sucursal_9_encargado",
+            "label": "Sucursal 9 — Encargado",
+            "name": "sucursal_9_encargado",
+            "type": "text",
+            "default_value": "Brandon Omar Rojas Melendez",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_sucursal_10_telefono",
+            "label": "Sucursal 10 — Teléfono",
+            "name": "sucursal_10_telefono",
+            "type": "text",
+            "default_value": "81 8287 9123",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_sucursal_10_encargado",
+            "label": "Sucursal 10 — Encargado",
+            "name": "sucursal_10_encargado",
+            "type": "text",
+            "default_value": "Marcos Reynaldo Ruiz Perez",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_sucursal_11_telefono",
+            "label": "Sucursal 11 — Teléfono",
+            "name": "sucursal_11_telefono",
+            "type": "text",
+            "default_value": "622 103 7441",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_sucursal_11_encargado",
+            "label": "Sucursal 11 — Encargado",
+            "name": "sucursal_11_encargado",
+            "type": "text",
+            "default_value": "Gerardo Garcia Valenzuela",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_sucursal_12_telefono",
+            "label": "Sucursal 12 — Teléfono",
+            "name": "sucursal_12_telefono",
+            "type": "text",
+            "default_value": "",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_sucursal_12_encargado",
+            "label": "Sucursal 12 — Encargado",
+            "name": "sucursal_12_encargado",
+            "type": "text",
+            "default_value": "",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_sucursal_13_telefono",
+            "label": "Sucursal 13 — Teléfono",
+            "name": "sucursal_13_telefono",
+            "type": "text",
+            "default_value": "",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_sucursal_13_encargado",
+            "label": "Sucursal 13 — Encargado",
+            "name": "sucursal_13_encargado",
+            "type": "text",
+            "default_value": "",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_sucursal_14_telefono",
+            "label": "Sucursal 14 — Teléfono",
+            "name": "sucursal_14_telefono",
+            "type": "text",
+            "default_value": "81 8287 8985",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_amex_sucursal_14_encargado",
+            "label": "Sucursal 14 — Encargado",
+            "name": "sucursal_14_encargado",
+            "type": "text",
+            "default_value": "Pablo Canales Hernandez",
+            "wrapper": {
+                "width": "50"
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-contacto.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "excerpt",
+        "discussion",
+        "comments"
+    ],
+    "active": true,
+    "description": "Contenido editable de la página de Contacto (hero, teléfono, redes, sucursales). El formulario no es editable aquí — es fijo en page-contacto.php.",
+    "show_in_rest": 0
+}

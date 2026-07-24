@@ -1,0 +1,59 @@
+{
+    "key": "group_amex_home_cta_final",
+    "title": "Home — CTA final",
+    "fields": [
+        {
+            "key": "field_amex_final_titulo",
+            "label": "Título",
+            "name": "final_titulo",
+            "type": "text",
+            "default_value": "¿No encuentras lo que buscas?"
+        },
+        {
+            "key": "field_amex_final_subtitulo",
+            "label": "Subtítulo",
+            "name": "final_subtitulo",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Ponte en contacto con nuestro equipo para dudas sobre inventarios, maquinarias, detalles, ubicaciones y más."
+        },
+        {
+            "key": "field_amex_final_cta_texto",
+            "label": "Texto del botón",
+            "name": "final_cta_texto",
+            "type": "text",
+            "default_value": "Contáctanos"
+        },
+        {
+            "key": "field_amex_final_imagen",
+            "label": "Imagen",
+            "name": "final_imagen",
+            "type": "image",
+            "instructions": "Foto del equipo/instalaciones, lado izquierdo de la tarjeta.",
+            "return_format": "array",
+            "preview_size": "medium"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-home.php"
+            }
+        ]
+    ],
+    "menu_order": 5,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "excerpt",
+        "discussion",
+        "comments"
+    ],
+    "active": true,
+    "description": "Contenido editable de la tarjeta CTA final del home.",
+    "show_in_rest": 0
+}

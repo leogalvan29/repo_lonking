@@ -1,0 +1,234 @@
+/* =========================================================
+   Página de Servicio — compartido por page-venta.php, page-renta.php
+   y cualquier página de servicio futura (mismos template-parts
+   genéricos servicio-hero/detalle/contacto/faq.php)
+   ========================================================= */
+
+/* Bloque 1 — Hero */
+.servicio-hero {
+  position: relative;
+  background-color: var(--color-black);
+  background-image: var(--servicio-hero-bg);
+  background-size: cover;
+  background-position: center;
+  color: var(--color-white);
+  overflow: hidden;
+}
+.servicio-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(18, 18, 18, 0.88) 0%, rgba(18, 18, 18, 0.6) 55%, rgba(18, 18, 18, 0.4) 100%);
+}
+.servicio-hero__content {
+  position: relative;
+  z-index: 1;
+  padding-block: 56px;
+  max-width: 640px;
+}
+.servicio-hero__content h1 {
+  color: var(--color-white);
+  font-size: clamp(1.8rem, 3.4vw, 2.4rem);
+  margin-bottom: 14px;
+}
+.servicio-hero__subtitle {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-white);
+  margin-bottom: 18px;
+}
+.servicio-hero__content p:not(.servicio-hero__subtitle) {
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.65;
+  margin-bottom: 14px;
+}
+
+/* Bloque 2 — Servicio incluye + Beneficios */
+.servicio-detalle { padding-block: 64px; }
+
+.servicio-detalle__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+@media (min-width: 992px) {
+  .servicio-detalle__grid { grid-template-columns: 1.1fr 0.9fr; gap: 48px; }
+}
+
+.servicio-detalle__content {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.servicio-detalle__block h2 {
+  font-size: clamp(1.3rem, 2.4vw, 1.7rem);
+  margin-bottom: 22px;
+}
+
+.servicio-features {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  padding: 24px;
+  border-radius: var(--radius-md);
+  background: var(--color-neutral-lightest);
+  margin-bottom: 24px;
+}
+@media (min-width: 640px) {
+  .servicio-features { grid-template-columns: repeat(2, 1fr); }
+}
+
+.servicio-features__item { padding-bottom: 4px; }
+.servicio-features__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--color-white);
+  color: var(--color-brand-orange-dark);
+  margin-bottom: 10px;
+}
+.servicio-features__icon svg { width: 18px; height: 18px; }
+.servicio-features__item h3 {
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+.servicio-features__item p {
+  font-size: 0.85rem;
+  color: var(--color-neutral-dark);
+  line-height: 1.55;
+}
+
+.servicio-detalle__cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.servicio-beneficios {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 24px;
+  padding-left: 20px;
+}
+.servicio-beneficios li {
+  list-style: disc;
+  color: var(--color-neutral-darker);
+  line-height: 1.6;
+}
+
+.servicio-detalle__images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.servicio-detalle__image {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  flex: 1;
+  min-height: 220px;
+}
+.servicio-detalle__image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* Bloque 3a — Contacto */
+.servicio-contacto { padding-block: 64px; }
+
+.servicio-contacto__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+@media (min-width: 900px) {
+  .servicio-contacto__grid { grid-template-columns: 1fr 1.2fr; gap: 56px; }
+}
+
+.servicio-contacto__intro h2 {
+  font-size: clamp(1.5rem, 2.6vw, 1.9rem);
+  margin-bottom: 24px;
+}
+
+.servicio-contacto__image {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+}
+.servicio-contacto__image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* Bloque 3b — FAQ */
+.servicio-faq {
+  position: relative;
+  background-color: var(--color-black);
+  background-image: var(--servicio-faq-bg);
+  background-size: cover;
+  background-position: center;
+  padding-block: 72px;
+}
+.servicio-faq__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(18, 18, 18, 0.55);
+}
+.servicio-faq__container { position: relative; z-index: 1; }
+
+.servicio-faq__card {
+  max-width: 720px;
+  margin-inline: auto;
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: 36px 28px;
+}
+@media (min-width: 640px) {
+  .servicio-faq__card { padding: 48px 56px; }
+}
+.servicio-faq__card h2 {
+  text-align: center;
+  font-size: clamp(1.5rem, 2.6vw, 1.9rem);
+  margin-bottom: 24px;
+}
+
+.servicio-faq__item {
+  border-bottom: 1px solid var(--color-neutral-lighter);
+}
+.servicio-faq__item:first-child { border-top: 1px solid var(--color-neutral-lighter); }
+
+.servicio-faq__question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 4px;
+  background: none;
+  border: none;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.98rem;
+  color: var(--color-black);
+}
+.servicio-faq__question svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  color: var(--color-neutral-dark);
+  transition: transform var(--transition-fast);
+}
+.servicio-faq__item.is-open .servicio-faq__question svg { transform: rotate(180deg); }
+
+.servicio-faq__answer {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows var(--transition-base);
+}
+.servicio-faq__answer > p {
+  overflow: hidden;
+  min-height: 0;
+  padding-right: 28px;
+  color: var(--color-neutral-dark);
+  line-height: 1.6;
+  font-size: 0.92rem;
+}
+.servicio-faq__item.is-open .servicio-faq__answer { grid-template-rows: 1fr; }
+.servicio-faq__item.is-open .servicio-faq__answer > p { padding-bottom: 18px; }

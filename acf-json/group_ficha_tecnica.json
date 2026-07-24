@@ -1,0 +1,117 @@
+{
+    "key": "group_amex_ficha_tecnica",
+    "title": "Ficha técnica",
+    "fields": [
+        {
+            "key": "field_amex_capacidad_ton",
+            "label": "Capacidad (t)",
+            "name": "capacidad_ton",
+            "type": "number",
+            "instructions": "Capacidad de carga en toneladas.",
+            "required": 0,
+            "step": "0.1"
+        },
+        {
+            "key": "field_amex_capacidad_lb",
+            "label": "Capacidad (lb)",
+            "name": "capacidad_lb",
+            "type": "number",
+            "instructions": "Capacidad de carga en libras.",
+            "required": 0,
+            "step": "1"
+        },
+        {
+            "key": "field_amex_horas",
+            "label": "Horas de uso",
+            "name": "horas",
+            "type": "number",
+            "instructions": "Solo aplica a equipos usados.",
+            "required": 0,
+            "step": "1"
+        },
+        {
+            "key": "field_amex_ficha_tecnica_pdf",
+            "label": "Ficha técnica (PDF)",
+            "name": "ficha_tecnica_pdf",
+            "type": "file",
+            "instructions": "Archivo PDF descargable desde la ficha de producto.",
+            "required": 0,
+            "return_format": "array",
+            "mime_types": "pdf"
+        },
+        {
+            "key": "field_amex_descripcion_larga",
+            "label": "Descripción larga",
+            "name": "descripcion_larga",
+            "type": "wysiwyg",
+            "instructions": "Texto de detalle técnico extenso mostrado en la pestaña \"Descripción\".",
+            "required": 0,
+            "tabs": "visual",
+            "media_upload": 0,
+            "toolbar": "basic"
+        },
+        {
+            "key": "field_amex_imagen_detalle",
+            "label": "Imagen de detalles",
+            "name": "imagen_detalle",
+            "type": "image",
+            "instructions": "Imagen exclusiva de este producto, mostrada junto a los tabs de Descripción/Detalles técnicos en la ficha. Se muestra a su altura completa (sin recorte).",
+            "required": 0,
+            "return_format": "array",
+            "preview_size": "large"
+        },
+        {
+            "key": "field_amex_mostrar_precio",
+            "label": "Mostrar precio",
+            "name": "mostrar_precio",
+            "type": "true_false",
+            "instructions": "Reservado para activar precio en el futuro. Ningún template lo consume todavía.",
+            "required": 0,
+            "default_value": 0,
+            "ui": 1
+        },
+        {
+            "key": "field_amex_destacado",
+            "label": "Destacado",
+            "name": "destacado",
+            "type": "true_false",
+            "instructions": "Actívalo para que este producto aparezca en el carrusel \"Equipos Destacados\" del home.",
+            "required": 0,
+            "default_value": 0,
+            "ui": 1
+        },
+        {
+            "key": "field_amex_recomendado",
+            "label": "Recomendado",
+            "name": "recomendado",
+            "type": "true_false",
+            "instructions": "Actívalo para que este producto aparezca en el carrusel \"Recomendados\" al final de cualquier ficha de producto.",
+            "required": 0,
+            "default_value": 0,
+            "ui": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "product"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments"
+    ],
+    "active": true,
+    "description": "Campos técnicos del producto (brief-amex-clone.md). Requiere ACF (versión gratuita).",
+    "show_in_rest": 0
+}

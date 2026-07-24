@@ -1,0 +1,52 @@
+{
+    "key": "group_amex_marca",
+    "title": "Marca — campos de término",
+    "fields": [
+        {
+            "key": "field_amex_marca_logo",
+            "label": "Logo",
+            "name": "marca_logo",
+            "type": "image",
+            "instructions": "Logo de la marca (usado en el marquee y en la página de marca).",
+            "required": 0,
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_amex_marca_descripcion",
+            "label": "Descripción",
+            "name": "marca_descripcion",
+            "type": "textarea",
+            "instructions": "Descripción corta de la marca para su página de archivo.",
+            "required": 0,
+            "rows": 4
+        },
+        {
+            "key": "field_amex_marca_banner",
+            "label": "Banner / imagen institucional",
+            "name": "marca_banner",
+            "type": "image",
+            "instructions": "Imagen usada como acompañamiento en la ficha de producto (sección Detalles) y en el banner de la página de marca. Si se deja vacía, la ficha de producto usa la imagen institucional por defecto (Personalizar > Producto).",
+            "required": 0,
+            "return_format": "array",
+            "preview_size": "medium"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "pa_marca"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "description": "Campos a nivel de término para la taxonomía de marcas (brief-amex-clone.md). Requiere ACF (versión gratuita).",
+    "show_in_rest": 0
+}

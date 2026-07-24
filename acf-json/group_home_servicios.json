@@ -1,0 +1,113 @@
+{
+    "key": "group_amex_home_servicios",
+    "title": "Home — Servicios",
+    "fields": [
+        {
+            "key": "field_amex_servicios_titulo",
+            "label": "Título",
+            "name": "servicios_titulo",
+            "type": "text",
+            "default_value": "Cero downtime, máxima productividad"
+        },
+        {
+            "key": "field_amex_servicios_subtitulo",
+            "label": "Subtítulo",
+            "name": "servicios_subtitulo",
+            "type": "textarea",
+            "rows": 3,
+            "default_value": "Stock permanente de refacciones críticas. Piezas originales, entrega express y soporte técnico para instalación. Con AMEX tu operación nunca se detiene."
+        },
+        {
+            "key": "field_amex_servicios_cta_texto",
+            "label": "Texto del botón",
+            "name": "servicios_cta_texto",
+            "type": "text",
+            "default_value": "Contáctanos"
+        },
+        {
+            "key": "field_amex_servicios_imagen_fondo",
+            "label": "Imagen de fondo",
+            "name": "servicios_imagen_fondo",
+            "type": "image",
+            "instructions": "Foto de fondo de la sección (se oscurece con un overlay para que el texto blanco resalte).",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_amex_servicios_cards_tab",
+            "label": "Tarjetas",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_amex_servicios_card_1_titulo",
+            "label": "Tarjeta 1 — Título",
+            "name": "servicios_card_1_titulo",
+            "type": "text",
+            "default_value": "Servicio Técnico y Mantenimiento",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_servicios_card_1_desc",
+            "label": "Tarjeta 1 — Descripción",
+            "name": "servicios_card_1_desc",
+            "type": "text",
+            "default_value": "Tu equipo siempre disponible, tu operación sin pausas",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_servicios_card_2_titulo",
+            "label": "Tarjeta 2 — Título",
+            "name": "servicios_card_2_titulo",
+            "type": "text",
+            "default_value": "Refacciones",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_servicios_card_2_desc",
+            "label": "Tarjeta 2 — Descripción",
+            "name": "servicios_card_2_desc",
+            "type": "text",
+            "default_value": "Refacciones originales y marcas líderes para tu operación",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_servicios_card_3_titulo",
+            "label": "Tarjeta 3 — Título",
+            "name": "servicios_card_3_titulo",
+            "type": "text",
+            "default_value": "Capacitación y Seguridad",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_servicios_card_3_desc",
+            "label": "Tarjeta 3 — Descripción",
+            "name": "servicios_card_3_desc",
+            "type": "text",
+            "default_value": "Operadores capacitados, operaciones más seguras",
+            "wrapper": { "width": "50" }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-home.php"
+            }
+        ]
+    ],
+    "menu_order": 3,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "excerpt",
+        "discussion",
+        "comments"
+    ],
+    "active": true,
+    "description": "Contenido editable de la sección de Servicios del home. Los íconos de las 3 tarjetas son fijos por posición en el template.",
+    "show_in_rest": 0
+}

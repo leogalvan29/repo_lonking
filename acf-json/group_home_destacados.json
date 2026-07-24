@@ -1,0 +1,89 @@
+{
+    "key": "group_amex_home_destacados",
+    "title": "Home — Equipos Destacados",
+    "fields": [
+        {
+            "key": "field_amex_destacados_titulo",
+            "label": "Título",
+            "name": "destacados_titulo",
+            "type": "text",
+            "default_value": "Equipos Destacados"
+        },
+        {
+            "key": "field_amex_destacados_cta1_texto",
+            "label": "Texto botón 1",
+            "name": "destacados_cta1_texto",
+            "type": "text",
+            "default_value": "Ver equipos nuevos",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_destacados_cta2_texto",
+            "label": "Texto botón 2",
+            "name": "destacados_cta2_texto",
+            "type": "text",
+            "default_value": "Contáctanos",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_destacados_trust_tab",
+            "label": "Barra de confianza",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_amex_trust_1_texto",
+            "label": "Trust 1",
+            "name": "trust_1_texto",
+            "type": "text",
+            "default_value": "Entrega en todo México",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_trust_2_texto",
+            "label": "Trust 2",
+            "name": "trust_2_texto",
+            "type": "text",
+            "default_value": "Soporte técnico especializado",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_trust_3_texto",
+            "label": "Trust 3",
+            "name": "trust_3_texto",
+            "type": "text",
+            "default_value": "Aliado oficial de HELI",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_trust_4_texto",
+            "label": "Trust 4",
+            "name": "trust_4_texto",
+            "type": "text",
+            "default_value": "+500 Empresas confían en nosotros",
+            "wrapper": { "width": "50" }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-home.php"
+            }
+        ]
+    ],
+    "menu_order": 2,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "excerpt",
+        "discussion",
+        "comments"
+    ],
+    "active": true,
+    "description": "Contenido editable del carrusel de Equipos Destacados y la barra de confianza del home. Los productos mostrados salen del campo ACF \"destacado\" en cada producto, no de aquí.",
+    "show_in_rest": 0
+}

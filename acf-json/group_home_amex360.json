@@ -1,0 +1,98 @@
+{
+    "key": "group_amex_home_amex360",
+    "title": "Home — AMEX 360°",
+    "fields": [
+        {
+            "key": "field_amex_amex360_titulo",
+            "label": "Título",
+            "name": "amex360_titulo",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Soluciones flexibles para cada necesidad operativa"
+        },
+        {
+            "key": "field_amex_amex360_subtitulo",
+            "label": "Subtítulo",
+            "name": "amex360_subtitulo",
+            "type": "textarea",
+            "rows": 3,
+            "default_value": "Nuestra app está diseñada para que tengas visibilidad, control y soporte inmediato, optimizando cada aspecto de tu operación."
+        },
+        {
+            "key": "field_amex_amex360_cta_texto",
+            "label": "Texto del botón",
+            "name": "amex360_cta_texto",
+            "type": "text",
+            "default_value": "Contáctanos"
+        },
+        {
+            "key": "field_amex_amex360_imagen_fondo",
+            "label": "Imagen de fondo",
+            "name": "amex360_imagen_fondo",
+            "type": "image",
+            "instructions": "Foto de fondo de la sección (se oscurece con un overlay del lado izquierdo para que el texto blanco resalte).",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_amex_amex360_features_tab",
+            "label": "Features",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_amex_amex360_feature_1",
+            "label": "Feature 1",
+            "name": "amex360_feature_1",
+            "type": "text",
+            "default_value": "Gestión de flota",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_amex360_feature_2",
+            "label": "Feature 2",
+            "name": "amex360_feature_2",
+            "type": "text",
+            "default_value": "Solicitudes en línea",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_amex360_feature_3",
+            "label": "Feature 3",
+            "name": "amex360_feature_3",
+            "type": "text",
+            "default_value": "Historial de servicio",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_amex360_feature_4",
+            "label": "Feature 4",
+            "name": "amex360_feature_4",
+            "type": "text",
+            "default_value": "Disponibilidad de flota",
+            "wrapper": { "width": "50" }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-home.php"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "excerpt",
+        "discussion",
+        "comments"
+    ],
+    "active": true,
+    "description": "Contenido editable de la sección AMEX 360° del home. Los íconos de las 4 features son fijos por posición en el template.",
+    "show_in_rest": 0
+}

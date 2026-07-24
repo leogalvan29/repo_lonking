@@ -1,0 +1,49 @@
+{
+    "key": "group_amex_home_catalogo",
+    "title": "Home — Catálogo",
+    "fields": [
+        {
+            "key": "field_amex_catalogo_titulo",
+            "label": "Título",
+            "name": "catalogo_titulo",
+            "type": "text",
+            "default_value": "Explora nuestro catálogo"
+        },
+        {
+            "key": "field_amex_catalogo_subtitulo",
+            "label": "Subtítulo",
+            "name": "catalogo_subtitulo",
+            "type": "text",
+            "default_value": "Usa los filtros para encontrar tu equipo más rápido"
+        },
+        {
+            "key": "field_amex_catalogo_cta_texto",
+            "label": "Texto del botón",
+            "name": "catalogo_cta_texto",
+            "type": "text",
+            "default_value": "Ver todo el catálogo"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-home.php"
+            }
+        ]
+    ],
+    "menu_order": 4,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "excerpt",
+        "discussion",
+        "comments"
+    ],
+    "active": true,
+    "description": "Contenido editable de la sección de catálogo/buscador del home. El grid muestra productos aleatorios; los filtros redirigen al catálogo real.",
+    "show_in_rest": 0
+}

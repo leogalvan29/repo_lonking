@@ -1,0 +1,154 @@
+{
+    "key": "group_amex_home_hero",
+    "title": "Home — Hero",
+    "fields": [
+        {
+            "key": "field_amex_hero_badge",
+            "label": "Badge",
+            "name": "hero_badge",
+            "type": "text",
+            "default_value": "Amex Machinery"
+        },
+        {
+            "key": "field_amex_home_hero_titulo",
+            "label": "Título",
+            "name": "hero_titulo",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Montacargas que maximizan tu eficiencia operativa"
+        },
+        {
+            "key": "field_amex_home_hero_subtitulo",
+            "label": "Subtítulo",
+            "name": "hero_subtitulo",
+            "type": "textarea",
+            "rows": 3,
+            "default_value": "Soluciones Integrales para tu operación: Montacargas, Plataformas de Elevación, Refacciones, Mantenimiento, Renta, Venta y Capacitación. Todo en un sólo partner."
+        },
+        {
+            "key": "field_amex_hero_imagen_fondo",
+            "label": "Imagen de fondo",
+            "name": "hero_imagen_fondo",
+            "type": "image",
+            "instructions": "Foto de fondo del hero (se oscurece con un overlay para que el texto blanco resalte).",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_amex_hero_cta_usados_texto",
+            "label": "Texto botón \"Usados\"",
+            "name": "hero_cta_usados_texto",
+            "type": "text",
+            "default_value": "Ver equipos usados",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_hero_cta_nuevos_texto",
+            "label": "Texto botón \"Nuevos\"",
+            "name": "hero_cta_nuevos_texto",
+            "type": "text",
+            "default_value": "Ver equipos nuevos",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_hero_telefono",
+            "label": "Teléfono (\"¿Necesitas atención inmediata?\")",
+            "name": "hero_telefono",
+            "type": "text",
+            "instructions": "Solo los 10 dígitos locales. Si se deja vacío, usa el mismo teléfono configurado en la página Contacto.",
+            "required": 0
+        },
+        {
+            "key": "field_amex_home_stats_tab",
+            "label": "Métricas",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_amex_stat_1_numero",
+            "label": "Métrica 1 — Número",
+            "name": "stat_1_numero",
+            "type": "text",
+            "default_value": "+4,500",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_stat_1_label",
+            "label": "Métrica 1 — Descripción",
+            "name": "stat_1_label",
+            "type": "text",
+            "default_value": "equipos entregados",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_stat_2_numero",
+            "label": "Métrica 2 — Número",
+            "name": "stat_2_numero",
+            "type": "text",
+            "default_value": "38",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_stat_2_label",
+            "label": "Métrica 2 — Descripción",
+            "name": "stat_2_label",
+            "type": "text",
+            "default_value": "años de experiencia",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_stat_3_numero",
+            "label": "Métrica 3 — Número",
+            "name": "stat_3_numero",
+            "type": "text",
+            "default_value": "+900",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_stat_3_label",
+            "label": "Métrica 3 — Descripción",
+            "name": "stat_3_label",
+            "type": "text",
+            "default_value": "clientes satisfechos",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_stat_4_numero",
+            "label": "Métrica 4 — Número",
+            "name": "stat_4_numero",
+            "type": "text",
+            "default_value": "+9",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_stat_4_label",
+            "label": "Métrica 4 — Descripción",
+            "name": "stat_4_label",
+            "type": "text",
+            "default_value": "marcas reconocidas a nivel mundial",
+            "wrapper": { "width": "50" }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-home.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "excerpt",
+        "discussion",
+        "comments"
+    ],
+    "active": true,
+    "description": "Contenido editable del hero del home. Los íconos de las métricas son fijos en el template (posición 1-4); solo el número y la descripción son editables.",
+    "show_in_rest": 0
+}

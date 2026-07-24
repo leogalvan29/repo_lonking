@@ -1,0 +1,372 @@
+{
+    "key": "group_amex_pagina_renta",
+    "title": "Página de Servicio — Renta de Montacargas",
+    "fields": [
+        {
+            "key": "field_amex_renta_tab_hero",
+            "label": "Bloque 1 — Hero",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_amex_renta_hero_titulo",
+            "label": "Título",
+            "name": "renta_hero_titulo",
+            "type": "text",
+            "default_value": "Renta de Montacargas"
+        },
+        {
+            "key": "field_amex_renta_hero_subtitulo",
+            "label": "Subtítulo",
+            "name": "renta_hero_subtitulo",
+            "type": "text",
+            "default_value": "Soluciones de renta flexibles para cada necesidad operativa"
+        },
+        {
+            "key": "field_amex_renta_hero_texto_1",
+            "label": "Párrafo 1",
+            "name": "renta_hero_texto_1",
+            "type": "textarea",
+            "rows": 3,
+            "default_value": "En Amex Machinery ofrecemos renta de montacargas, plataformas elevadoras y equipos especializados sin necesidad de una inversión de capital. Mantén tu operación funcionando con equipos certificados y en óptimas condiciones."
+        },
+        {
+            "key": "field_amex_renta_hero_texto_2",
+            "label": "Párrafo 2",
+            "name": "renta_hero_texto_2",
+            "type": "textarea",
+            "rows": 3,
+            "default_value": "Ya sea que necesites un equipo para un proyecto temporal, un pico de demanda estacional, o como solución mientras decides tu compra, tenemos el plan de renta ideal para cada operación."
+        },
+        {
+            "key": "field_amex_renta_hero_imagen_fondo",
+            "label": "Imagen de fondo",
+            "name": "renta_hero_imagen_fondo",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_amex_renta_tab_servicio",
+            "label": "Bloque 2 — Servicio y Beneficios",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_amex_renta_servicio_titulo",
+            "label": "Título de la lista de servicio",
+            "name": "renta_servicio_titulo",
+            "type": "text",
+            "default_value": "Nuestro servicio de Renta de Montacargas incluye:"
+        },
+        {
+            "key": "field_amex_renta_feature_1_titulo",
+            "label": "Feature 1 — Título",
+            "name": "renta_feature_1_titulo",
+            "type": "text",
+            "default_value": "Amplia flota de equipos disponibles",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_renta_feature_1_desc",
+            "label": "Feature 1 — Descripción",
+            "name": "renta_feature_1_desc",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Montacargas eléctricos, de combustión, plataformas de elevación y equipos especializados, listos para renta inmediata en toda la región.",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_renta_feature_2_titulo",
+            "label": "Feature 2 — Título",
+            "name": "renta_feature_2_titulo",
+            "type": "text",
+            "default_value": "Renta a corto y largo plazo",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_renta_feature_2_desc",
+            "label": "Feature 2 — Descripción",
+            "name": "renta_feature_2_desc",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Planes flexibles por día, semana, mes o proyecto completo, adaptados al tiempo real que necesitas el equipo.",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_renta_feature_3_titulo",
+            "label": "Feature 3 — Título",
+            "name": "renta_feature_3_titulo",
+            "type": "text",
+            "default_value": "Mantenimiento incluido",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_renta_feature_3_desc",
+            "label": "Feature 3 — Descripción",
+            "name": "renta_feature_3_desc",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Todo el mantenimiento preventivo y correctivo durante el periodo de renta corre por nuestra cuenta, sin costos ocultos.",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_renta_feature_4_titulo",
+            "label": "Feature 4 — Título",
+            "name": "renta_feature_4_titulo",
+            "type": "text",
+            "default_value": "Entrega e instalación en sitio",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_renta_feature_4_desc",
+            "label": "Feature 4 — Descripción",
+            "name": "renta_feature_4_desc",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Llevamos el equipo directo a tu operación, con capacitación básica de uso incluida para tu equipo de trabajo.",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_renta_feature_5_titulo",
+            "label": "Feature 5 — Título",
+            "name": "renta_feature_5_titulo",
+            "type": "text",
+            "default_value": "Soporte técnico permanente",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_renta_feature_5_desc",
+            "label": "Feature 5 — Descripción",
+            "name": "renta_feature_5_desc",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Asistencia técnica durante todo el periodo de renta para que tu operación nunca se detenga.",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_renta_cta1_texto",
+            "label": "Texto botón 1 (usados)",
+            "name": "renta_cta1_texto",
+            "type": "text",
+            "default_value": "Ver equipos usados",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_renta_cta2_texto",
+            "label": "Texto botón 2 (nuevos)",
+            "name": "renta_cta2_texto",
+            "type": "text",
+            "default_value": "Ver equipos nuevos",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_renta_beneficios_titulo",
+            "label": "Título de beneficios",
+            "name": "renta_beneficios_titulo",
+            "type": "text",
+            "default_value": "Beneficios para tu empresa"
+        },
+        {
+            "key": "field_amex_renta_beneficio_1",
+            "label": "Beneficio 1",
+            "name": "renta_beneficio_1",
+            "type": "text",
+            "default_value": "Sin inversión de capital: opera con equipo de punta sin comprarlo."
+        },
+        {
+            "key": "field_amex_renta_beneficio_2",
+            "label": "Beneficio 2",
+            "name": "renta_beneficio_2",
+            "type": "text",
+            "default_value": "Flexibilidad para escalar tu flota según la demanda de cada temporada o proyecto."
+        },
+        {
+            "key": "field_amex_renta_beneficio_3",
+            "label": "Beneficio 3",
+            "name": "renta_beneficio_3",
+            "type": "text",
+            "default_value": "Cero preocupaciones por mantenimiento, depreciación o reventa del equipo."
+        },
+        {
+            "key": "field_amex_renta_beneficio_4",
+            "label": "Beneficio 4",
+            "name": "renta_beneficio_4",
+            "type": "text",
+            "default_value": "Acceso a tecnología reciente y equipos siempre certificados y en buen estado."
+        },
+        {
+            "key": "field_amex_renta_beneficios_cta_texto",
+            "label": "Texto del botón de beneficios",
+            "name": "renta_beneficios_cta_texto",
+            "type": "text",
+            "default_value": "Contáctanos"
+        },
+        {
+            "key": "field_amex_renta_imagen_1",
+            "label": "Imagen 1 (columna derecha, arriba)",
+            "name": "renta_imagen_1",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_renta_imagen_2",
+            "label": "Imagen 2 (columna derecha, abajo)",
+            "name": "renta_imagen_2",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_amex_renta_tab_contacto",
+            "label": "Bloque 3 — Contacto",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_amex_renta_contacto_titulo",
+            "label": "Título",
+            "name": "renta_contacto_titulo",
+            "type": "text",
+            "default_value": "Ponte en contacto con nosotros"
+        },
+        {
+            "key": "field_amex_renta_contacto_imagen",
+            "label": "Imagen (equipo AMEX)",
+            "name": "renta_contacto_imagen",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_amex_renta_tab_faq",
+            "label": "Bloque 3 — FAQ",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_amex_renta_faq_titulo",
+            "label": "Título",
+            "name": "renta_faq_titulo",
+            "type": "text",
+            "default_value": "Preguntas frecuentes"
+        },
+        {
+            "key": "field_amex_renta_faq_imagen_fondo",
+            "label": "Imagen de fondo",
+            "name": "renta_faq_imagen_fondo",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_amex_renta_faq_1_pregunta",
+            "label": "FAQ 1 — Pregunta",
+            "name": "renta_faq_1_pregunta",
+            "type": "text",
+            "default_value": "¿Cuál es el periodo mínimo de renta?"
+        },
+        {
+            "key": "field_amex_renta_faq_1_respuesta",
+            "label": "FAQ 1 — Respuesta",
+            "name": "renta_faq_1_respuesta",
+            "type": "textarea",
+            "rows": 3
+        },
+        {
+            "key": "field_amex_renta_faq_2_pregunta",
+            "label": "FAQ 2 — Pregunta",
+            "name": "renta_faq_2_pregunta",
+            "type": "text",
+            "default_value": "¿Qué incluye el servicio de renta?"
+        },
+        {
+            "key": "field_amex_renta_faq_2_respuesta",
+            "label": "FAQ 2 — Respuesta",
+            "name": "renta_faq_2_respuesta",
+            "type": "textarea",
+            "rows": 3
+        },
+        {
+            "key": "field_amex_renta_faq_3_pregunta",
+            "label": "FAQ 3 — Pregunta",
+            "name": "renta_faq_3_pregunta",
+            "type": "text",
+            "default_value": "¿Puedo rentar por proyecto o temporada?"
+        },
+        {
+            "key": "field_amex_renta_faq_3_respuesta",
+            "label": "FAQ 3 — Respuesta",
+            "name": "renta_faq_3_respuesta",
+            "type": "textarea",
+            "rows": 3
+        },
+        {
+            "key": "field_amex_renta_faq_4_pregunta",
+            "label": "FAQ 4 — Pregunta",
+            "name": "renta_faq_4_pregunta",
+            "type": "text",
+            "default_value": "¿Qué pasa si el equipo falla durante la renta?"
+        },
+        {
+            "key": "field_amex_renta_faq_4_respuesta",
+            "label": "FAQ 4 — Respuesta",
+            "name": "renta_faq_4_respuesta",
+            "type": "textarea",
+            "rows": 3
+        },
+        {
+            "key": "field_amex_renta_faq_5_pregunta",
+            "label": "FAQ 5 — Pregunta",
+            "name": "renta_faq_5_pregunta",
+            "type": "text",
+            "default_value": "¿Ofrecen opción de compra al finalizar la renta?"
+        },
+        {
+            "key": "field_amex_renta_faq_5_respuesta",
+            "label": "FAQ 5 — Respuesta",
+            "name": "renta_faq_5_respuesta",
+            "type": "textarea",
+            "rows": 3
+        },
+        {
+            "key": "field_amex_renta_faq_6_pregunta",
+            "label": "FAQ 6 — Pregunta",
+            "name": "renta_faq_6_pregunta",
+            "type": "text",
+            "default_value": "¿En qué zonas del país tienen cobertura de renta?"
+        },
+        {
+            "key": "field_amex_renta_faq_6_respuesta",
+            "label": "FAQ 6 — Respuesta",
+            "name": "renta_faq_6_respuesta",
+            "type": "textarea",
+            "rows": 3
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-renta.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "excerpt",
+        "discussion",
+        "comments"
+    ],
+    "active": true,
+    "description": "Contenido editable de la página de servicio \"Renta de Montacargas\" (page-renta.php). Copy de placeholder — ajusta según lo que definas para esta página.",
+    "show_in_rest": 0
+}
