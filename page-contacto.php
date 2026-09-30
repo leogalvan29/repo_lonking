@@ -65,6 +65,11 @@ $sucursales = amex_sucursales();
 								<span><?php echo esc_html( $sucursal['encargado'] ); ?></span>
 							</p>
 						<?php endif; ?>
+						<?php if ( ! empty( $sucursal['whatsapp'] ) ) : ?>
+							<a class="btn btn--whatsapp contact-branch-card__whatsapp" href="<?php echo esc_url( amex_sucursal_whatsapp_url( $sucursal['whatsapp'], $sucursal['nombre'] ) ); ?>" target="_blank" rel="noopener">
+								<?php esc_html_e( 'WhatsApp', 'amex-machinery' ); ?>
+							</a>
+						<?php endif; ?>
 						<a href="https://www.google.com/maps/search/?api=1&query=<?php echo rawurlencode( $sucursal['nombre'] . ', ' . $sucursal['direccion'] ); ?>" target="_blank" rel="noopener">
 							<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
 							<?php esc_html_e( 'Abrir en Google Maps', 'amex-machinery' ); ?>

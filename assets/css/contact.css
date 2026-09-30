@@ -67,6 +67,14 @@
 .contact-branch-card a svg { width: 14px; height: 14px; }
 .contact-branch-card a:hover { color: var(--color-black); }
 
+.contact-branch-card .contact-branch-card__whatsapp {
+  display: flex;
+  margin-bottom: 12px;
+  text-decoration: none;
+  color: var(--color-white);
+}
+.contact-branch-card .contact-branch-card__whatsapp:hover { color: var(--color-white); }
+
 /* Columna derecha: formulario centrado */
 .contact-form-panel { text-align: center; }
 .contact-form-panel h2 {

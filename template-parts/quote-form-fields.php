@@ -6,15 +6,28 @@
  * de servicio futura). El wrapper .quote-form-panel/título/nota los
  * decide quien lo llama — esta pieza es solo el <form>.
  *
- * Fase actual: maqueta visual, sin envío real (ver brief — Contact
- * Form 7 se conecta en una fase posterior).
+ * El envío se procesa vía admin-post.php (ver inc/quote-form.php),
+ * sin depender de ningún plugin de formularios — envía por wp_mail()
+ * al admin_email del sitio.
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
+
+$quote_status = isset( $_GET['cotizacion'] ) ? sanitize_key( wp_unslash( $_GET['cotizacion'] ) ) : '';
+$current_url  = remove_query_arg( 'cotizacion', home_url( add_query_arg( null, null ) ) );
 ?>
-<form class="quote-form" method="post" action="">
+<?php if ( 'ok' === $quote_status ) : ?>
+	<p class="quote-form__notice quote-form__notice--success"><?php esc_html_e( '¡Gracias! Recibimos tu solicitud, te contactaremos pronto.', 'amex-machinery' ); ?></p>
+<?php elseif ( 'error' === $quote_status ) : ?>
+	<p class="quote-form__notice quote-form__notice--error"><?php esc_html_e( 'Hubo un problema al enviar tu solicitud. Intenta de nuevo o contáctanos por WhatsApp/teléfono.', 'amex-machinery' ); ?></p>
+<?php endif; ?>
+<form class="quote-form" method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">
+	<input type="hidden" name="action" value="amex_quote_submit">
+	<input type="hidden" name="redirect_to" value="<?php echo esc_url( $current_url ); ?>">
+	<?php wp_nonce_field( 'amex_quote_submit', 'amex_quote_nonce' ); ?>
+
 	<div class="quote-form__row">
 		<label>
 			<?php esc_html_e( 'Nombre', 'amex-machinery' ); ?> *

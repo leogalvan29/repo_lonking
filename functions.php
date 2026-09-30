@@ -176,6 +176,19 @@ function amex_theme_telefono_whatsapp() {
 }
 
 /**
+ * Link https://wa.me/... para un número específico de una sucursal
+ * (distinto al teléfono global del sitio que usa el botón flotante).
+ */
+function amex_sucursal_whatsapp_url( $numero, $sucursal_nombre = '' ) {
+	$digits  = preg_replace( '/[^0-9]/', '', $numero );
+	$message = $sucursal_nombre
+		? sprintf( __( 'Hola, quiero más información de la sucursal %s', 'amex-machinery' ), $sucursal_nombre )
+		: __( 'Hola, necesito más información', 'amex-machinery' );
+
+	return 'https://wa.me/52' . $digits . '?text=' . rawurlencode( $message );
+}
+
+/**
  * Lista de estados de México, usada en el select de cualquier
  * formulario de contacto/cotización del sitio.
  */
@@ -194,6 +207,10 @@ function amex_estados_mx() {
  * Editable vía ACF en la página "Contacto" (sucursal_1_nombre,
  * sucursal_1_direccion, ... sucursal_14_*) — 14 en total. Las que no
  * tengan nombre capturado todavía se omiten (no se muestran vacías).
+ *
+ * Solicitud del cliente (2026-09-30): dejar publicadas únicamente
+ * Monterrey (10) y Torreón (14); el resto de los defaults de abajo se
+ * conserva por si se vuelven a publicar más adelante.
  */
 function amex_sucursales() {
 	$defaults = array(
@@ -283,9 +300,16 @@ function amex_sucursales() {
 		),
 	);
 
+	$sucursales_activas = array( 10, 14 );
+
+	$whatsapp_defaults = array(
+		10 => '81 1679 2631',
+		14 => '871 579 2787',
+	);
+
 	$sucursales = array();
 
-	for ( $n = 1; $n <= 14; $n++ ) {
+	foreach ( $sucursales_activas as $n ) {
 		$default = $defaults[ $n ] ?? array(
 			'nombre'    => '',
 			'direccion' => '',
@@ -304,6 +328,7 @@ function amex_sucursales() {
 			'direccion' => amex_contact_field( "sucursal_{$n}_direccion", $default['direccion'] ),
 			'telefono'  => amex_contact_field( "sucursal_{$n}_telefono", $default['telefono'] ),
 			'encargado' => amex_contact_field( "sucursal_{$n}_encargado", $default['encargado'] ),
+			'whatsapp'  => amex_contact_field( "sucursal_{$n}_whatsapp", $whatsapp_defaults[ $n ] ?? '' ),
 		);
 	}
 
@@ -313,6 +338,7 @@ function amex_sucursales() {
 require AMEX_THEME_DIR . '/inc/contact-fields.php';
 require AMEX_THEME_DIR . '/inc/woocommerce.php';
 require AMEX_THEME_DIR . '/inc/catalog-filters.php';
+require AMEX_THEME_DIR . '/inc/quote-form.php';
 
 /**
  * Plantillas de página de servicio conocidas (venta, renta, y las que

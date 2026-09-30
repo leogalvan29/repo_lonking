@@ -2,9 +2,11 @@
 /**
  * Modal de "Solicitar Cotización".
  *
- * Fase actual: maqueta visual + comportamiento de apertura/cierre y
- * precarga del nombre del equipo (JS). El envío real (Contact Form 7 +
- * notificación por email) se conecta en una fase posterior — ver brief.
+ * Apertura/cierre y precarga del nombre del equipo vía JS
+ * (assets/js/product.js). El envío se procesa vía admin-post.php (ver
+ * inc/quote-form.php) — sin AJAX: si el envío trae ?cotizacion= en la
+ * URL (tras el redirect del handler), el modal se abre ya con el
+ * aviso de éxito/error visible.
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -12,8 +14,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 $estados_mx = amex_estados_mx();
+
+$quote_status = isset( $_GET['cotizacion'] ) ? sanitize_key( wp_unslash( $_GET['cotizacion'] ) ) : '';
+$current_url  = remove_query_arg( 'cotizacion', home_url( add_query_arg( null, null ) ) );
 ?>
-<div class="quote-modal" id="quote-modal" aria-hidden="true">
+<div class="quote-modal<?php echo $quote_status ? ' is-open' : ''; ?>" id="quote-modal" aria-hidden="<?php echo $quote_status ? 'false' : 'true'; ?>">
 	<div class="quote-modal__overlay js-close-quote"></div>
 
 	<div class="quote-modal__panel" role="dialog" aria-modal="true" aria-labelledby="quote-modal-title">
@@ -24,7 +29,16 @@ $estados_mx = amex_estados_mx();
 		<h3 id="quote-modal-title"><?php esc_html_e( 'Solicitar Cotización', 'amex-machinery' ); ?></h3>
 		<p class="quote-modal__equipment" data-quote-equipment-label></p>
 
-		<form class="quote-form" method="post" action="">
+		<?php if ( 'ok' === $quote_status ) : ?>
+			<p class="quote-form__notice quote-form__notice--success"><?php esc_html_e( '¡Gracias! Recibimos tu solicitud, te contactaremos pronto.', 'amex-machinery' ); ?></p>
+		<?php elseif ( 'error' === $quote_status ) : ?>
+			<p class="quote-form__notice quote-form__notice--error"><?php esc_html_e( 'Hubo un problema al enviar tu solicitud. Intenta de nuevo o contáctanos por WhatsApp/teléfono.', 'amex-machinery' ); ?></p>
+		<?php endif; ?>
+
+		<form class="quote-form" method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">
+			<input type="hidden" name="action" value="amex_quote_submit">
+			<input type="hidden" name="redirect_to" value="<?php echo esc_url( $current_url ); ?>">
+			<?php wp_nonce_field( 'amex_quote_submit', 'amex_quote_nonce' ); ?>
 			<input type="hidden" name="equipo" value="" data-quote-equipment-field>
 
 			<div class="quote-form__row">

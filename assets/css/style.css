@@ -559,6 +559,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 .quote-form__submit { align-self: flex-start; margin-top: 4px; }
 
+.quote-form__notice {
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.quote-form__notice--success { background: #e6f7ed; color: #1c7c3f; }
+.quote-form__notice--error { background: #fdecec; color: #b42318; }
+
 /* =========================================================
    Carrusel reusable de productos (Destacados en home,
    Recomendados en ficha de producto, y cualquier otro futuro)
