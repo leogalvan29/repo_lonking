@@ -46,6 +46,7 @@ function amex_contact_info_defaults() {
 		'site_telefono_label'   => 'Monterrey',
 		'site_telefono_2'       => '871 579 2787',
 		'site_telefono_2_label' => 'Torreón',
+		'footer_copyright'      => 'Amex Machinery',
 	);
 }
 
@@ -79,6 +80,10 @@ function amex_customize_register( $wp_customize ) {
 		'site_telefono_2_label' => array(
 			'label'       => __( 'Etiqueta del teléfono secundario', 'amex-machinery' ),
 			'description' => __( 'Ej. Torreón.', 'amex-machinery' ),
+		),
+		'footer_copyright'      => array(
+			'label'       => __( 'Texto del copyright (footer)', 'amex-machinery' ),
+			'description' => __( 'Se muestra como "© AÑO texto". El año se actualiza solo.', 'amex-machinery' ),
 		),
 	);
 

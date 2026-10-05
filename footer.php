@@ -8,6 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 $footer_telefonos     = amex_theme_telefonos();
+$footer_copyright     = get_theme_mod( 'footer_copyright', amex_contact_info_defaults()['footer_copyright'] );
 $footer_facebook      = amex_contact_field( 'facebook_url', 'https://www.facebook.com/amexmachinery/' );
 $footer_instagram     = amex_contact_field( 'instagram_url', 'https://www.instagram.com/amexmachinery' );
 $footer_linkedin      = amex_contact_field( 'linkedin_url', 'https://www.linkedin.com/company/amex-machinery/' );
@@ -110,7 +111,7 @@ $footer_servicios     = amex_get_service_pages();
 		</div>
 
 		<div class="footer-bottom">
-			<p>&copy; <?php echo esc_html( gmdate( 'Y' ) ); ?> Amex Machinery</p>
+			<p>&copy; <?php echo esc_html( gmdate( 'Y' ) ); ?> <?php echo esc_html( $footer_copyright ); ?></p>
 			<div class="footer-legal-links">
 				<a href="#"><?php esc_html_e( 'Política de Privacidad', 'amex-machinery' ); ?></a>
 				<a href="#"><?php esc_html_e( 'Términos y Condiciones', 'amex-machinery' ); ?></a>
