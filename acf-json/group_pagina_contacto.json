@@ -59,14 +59,6 @@
             "placement": "top"
         },
         {
-            "key": "field_amex_telefono",
-            "label": "Teléfono",
-            "name": "telefono",
-            "type": "text",
-            "instructions": "Solo los 10 dígitos locales (p. ej. 6142800464 o 614 280 0464) — el +52 de México se agrega automáticamente para los links de llamada y WhatsApp.",
-            "default_value": "614 280 0464"
-        },
-        {
             "key": "field_amex_whatsapp_mensaje",
             "label": "Mensaje predefinido de WhatsApp",
             "name": "whatsapp_mensaje",

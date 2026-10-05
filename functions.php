@@ -152,11 +152,45 @@ function amex_get_field( $selector, $post_id = false, $default = '' ) {
 }
 
 /**
- * Teléfono del sitio (header/footer/WhatsApp) — vive en el Customizer
- * (Apariencia > Personalizar > Información de Contacto), no en ACF.
+ * Teléfonos del sitio (header/footer/hero/contacto/WhatsApp) — viven en
+ * el Customizer (Apariencia > Personalizar > Información de Contacto),
+ * no en ACF, para que haya una sola fuente de verdad.
+ *
+ * Solicitud del cliente (2026-10-05): mostrar los números de las dos
+ * sucursales (Monterrey y Torreón). El primero es el principal: es el
+ * único que se usa donde solo cabe un número (WhatsApp, "Contacta a un
+ * asesor"). Si el segundo se deja vacío, el sitio muestra solo uno.
+ *
+ * @return array Lista de array( 'label' => ..., 'numero' => ..., 'href' => ... ).
+ */
+function amex_theme_telefonos() {
+	$defaults = amex_contact_info_defaults();
+	$telefonos = array();
+
+	foreach ( array( '', '_2' ) as $suffix ) {
+		$numero = trim( get_theme_mod( "site_telefono{$suffix}", $defaults[ "site_telefono{$suffix}" ] ) );
+
+		if ( ! $numero ) {
+			continue;
+		}
+
+		$telefonos[] = array(
+			'label'  => trim( get_theme_mod( "site_telefono{$suffix}_label", $defaults[ "site_telefono{$suffix}_label" ] ) ),
+			'numero' => $numero,
+			'href'   => '+52' . preg_replace( '/[^0-9]/', '', $numero ),
+		);
+	}
+
+	return $telefonos;
+}
+
+/**
+ * Teléfono principal (el primero de amex_theme_telefonos()).
  */
 function amex_theme_telefono() {
-	return get_theme_mod( 'site_telefono', '614 280 0464' );
+	$telefonos = amex_theme_telefonos();
+
+	return $telefonos ? $telefonos[0]['numero'] : '';
 }
 
 /**
@@ -211,6 +245,9 @@ function amex_estados_mx() {
  * Solicitud del cliente (2026-09-30): dejar publicadas únicamente
  * Monterrey (10) y Torreón (14); el resto de los defaults de abajo se
  * conserva por si se vuelven a publicar más adelante.
+ *
+ * Solicitud del cliente (2026-10-05): nuevos encargados — Belén Canul
+ * (Monterrey) y Mariana Ayoub (Torreón).
  */
 function amex_sucursales() {
 	$defaults = array(
@@ -271,8 +308,8 @@ function amex_sucursales() {
 		10 => array(
 			'nombre'    => 'AMEX Monterrey',
 			'direccion' => 'Blvd. José López Portillo 333, Bodega 107, Col. Valles del Canadá, Gral. Escobedo, N.L., C.P. 66220',
-			'telefono'  => '81 8287 9123',
-			'encargado' => 'Marcos Reynaldo Ruiz Perez',
+			'telefono'  => '811 679 2631',
+			'encargado' => 'Belén Canul',
 		),
 		11 => array(
 			'nombre'    => 'AMEX Guaymas',
@@ -295,15 +332,15 @@ function amex_sucursales() {
 		14 => array(
 			'nombre'    => 'AMEX Torreón',
 			'direccion' => 'Antigua Carretera Torreón - San Pedro No. 150, Loc. Ejido Ana, C.P. 27070',
-			'telefono'  => '81 8287 8985',
-			'encargado' => 'Pablo Canales Hernandez',
+			'telefono'  => '871 579 2787',
+			'encargado' => 'Mariana Ayoub',
 		),
 	);
 
 	$sucursales_activas = array( 10, 14 );
 
 	$whatsapp_defaults = array(
-		10 => '81 1679 2631',
+		10 => '811 679 2631',
 		14 => '871 579 2787',
 	);
 

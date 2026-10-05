@@ -35,13 +35,17 @@ function amex_product_typography_defaults() {
 }
 
 /**
- * Teléfono mostrado en el header y el footer (compartido por todo el
- * sitio). Vive en el Customizer, no en ACF, para que sea editable
- * desde Apariencia > Personalizar sin depender de ninguna página.
+ * Teléfonos mostrados en header, footer, hero y formularios (compartidos
+ * por todo el sitio). Viven en el Customizer, no en ACF, para que sean
+ * editables desde Apariencia > Personalizar sin depender de ninguna
+ * página. El 1 es el principal (WhatsApp); el 2 es opcional.
  */
 function amex_contact_info_defaults() {
 	return array(
-		'site_telefono' => '614 280 0464',
+		'site_telefono'         => '811 679 2631',
+		'site_telefono_label'   => 'Monterrey',
+		'site_telefono_2'       => '871 579 2787',
+		'site_telefono_2_label' => 'Torreón',
 	);
 }
 
@@ -52,30 +56,51 @@ function amex_customize_register( $wp_customize ) {
 		'amex_contact_info',
 		array(
 			'title'       => __( 'Información de Contacto', 'amex-machinery' ),
-			'description' => __( 'Teléfono que se muestra en el header y el footer de todo el sitio (también se usa para el link de WhatsApp).', 'amex-machinery' ),
+			'description' => __( 'Teléfonos que se muestran en todo el sitio: header, footer, hero del home y junto a los formularios. El principal también se usa para WhatsApp.', 'amex-machinery' ),
 			'priority'    => 25,
 		)
 	);
 
 	$contact_defaults = amex_contact_info_defaults();
 
-	$wp_customize->add_setting(
-		'site_telefono',
-		array(
-			'default'           => $contact_defaults['site_telefono'],
-			'sanitize_callback' => 'sanitize_text_field',
-			'transport'         => 'refresh',
-		)
+	$contact_fields = array(
+		'site_telefono'         => array(
+			'label'       => __( 'Teléfono principal', 'amex-machinery' ),
+			'description' => __( 'Solo los 10 dígitos locales (ej. 811 679 2631) — el +52 de México se agrega automáticamente. También es el número de WhatsApp.', 'amex-machinery' ),
+		),
+		'site_telefono_label'   => array(
+			'label'       => __( 'Etiqueta del teléfono principal', 'amex-machinery' ),
+			'description' => __( 'Ej. Monterrey. Se muestra junto al número cuando hay dos teléfonos.', 'amex-machinery' ),
+		),
+		'site_telefono_2'       => array(
+			'label'       => __( 'Teléfono secundario', 'amex-machinery' ),
+			'description' => __( 'Opcional. Déjalo vacío para mostrar solo el teléfono principal.', 'amex-machinery' ),
+		),
+		'site_telefono_2_label' => array(
+			'label'       => __( 'Etiqueta del teléfono secundario', 'amex-machinery' ),
+			'description' => __( 'Ej. Torreón.', 'amex-machinery' ),
+		),
 	);
-	$wp_customize->add_control(
-		'site_telefono',
-		array(
-			'type'        => 'text',
-			'section'     => 'amex_contact_info',
-			'label'       => __( 'Teléfono', 'amex-machinery' ),
-			'description' => __( 'Solo los 10 dígitos locales (ej. 614 280 0464) — el +52 de México se agrega automáticamente.', 'amex-machinery' ),
-		)
-	);
+
+	foreach ( $contact_fields as $setting_id => $control ) {
+		$wp_customize->add_setting(
+			$setting_id,
+			array(
+				'default'           => $contact_defaults[ $setting_id ],
+				'sanitize_callback' => 'sanitize_text_field',
+				'transport'         => 'refresh',
+			)
+		);
+		$wp_customize->add_control(
+			$setting_id,
+			array(
+				'type'        => 'text',
+				'section'     => 'amex_contact_info',
+				'label'       => $control['label'],
+				'description' => $control['description'],
+			)
+		);
+	}
 
 	$wp_customize->add_section(
 		'amex_header_design',

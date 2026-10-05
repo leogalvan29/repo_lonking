@@ -66,7 +66,9 @@
 }
 .home-hero__phone svg { width: 18px; height: 18px; color: var(--color-brand-orange); flex-shrink: 0; }
 .home-hero__phone strong { color: var(--color-white); }
-.home-hero__phone:hover { color: var(--color-white); }
+.home-hero__phone a { color: inherit; white-space: nowrap; }
+.home-hero__phone a + a { margin-left: 12px; }
+.home-hero__phone a:hover { color: var(--color-white); }
 
 .home-hero__stats {
   position: relative;

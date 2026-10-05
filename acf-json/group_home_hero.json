@@ -51,14 +51,6 @@
             "wrapper": { "width": "50" }
         },
         {
-            "key": "field_amex_hero_telefono",
-            "label": "Teléfono (\"¿Necesitas atención inmediata?\")",
-            "name": "hero_telefono",
-            "type": "text",
-            "instructions": "Solo los 10 dígitos locales. Si se deja vacío, usa el mismo teléfono configurado en la página Contacto.",
-            "required": 0
-        },
-        {
             "key": "field_amex_home_stats_tab",
             "label": "Métricas",
             "type": "tab",

@@ -186,7 +186,7 @@ while ( have_posts() ) :
 				</div>
 
 				<div class="product-details__actions">
-					<a class="btn btn--primary" href="tel:+526142800464">
+					<a class="btn btn--primary" href="tel:<?php echo esc_attr( amex_theme_telefono_href() ); ?>">
 						<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="8" r="3.2" stroke="currentColor" stroke-width="1.6"/><path d="M5 19.5c1.2-3.2 4-5 7-5s5.8 1.8 7 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
 						<span><?php esc_html_e( 'Contacta a un asesor', 'amex-machinery' ); ?></span>
 					</a>

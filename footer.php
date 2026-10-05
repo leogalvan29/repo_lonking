@@ -7,8 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-$footer_telefono      = amex_theme_telefono();
-$footer_telefono_href = amex_theme_telefono_href();
+$footer_telefonos     = amex_theme_telefonos();
 $footer_facebook      = amex_contact_field( 'facebook_url', 'https://www.facebook.com/amexmachinery/' );
 $footer_instagram     = amex_contact_field( 'instagram_url', 'https://www.instagram.com/amexmachinery' );
 $footer_linkedin      = amex_contact_field( 'linkedin_url', 'https://www.linkedin.com/company/amex-machinery/' );
@@ -37,7 +36,12 @@ $footer_servicios     = amex_get_service_pages();
 
 				<div class="footer-direct-contact">
 					<span class="footer-col-title" style="margin-bottom:6px;"><?php esc_html_e( 'Contacto Directo', 'amex-machinery' ); ?></span>
-					<a href="tel:<?php echo esc_attr( $footer_telefono_href ); ?>"><?php echo esc_html( $footer_telefono ); ?></a>
+					<?php foreach ( $footer_telefonos as $tel ) : ?>
+						<a href="tel:<?php echo esc_attr( $tel['href'] ); ?>">
+							<?php if ( $tel['label'] ) : ?><small><?php echo esc_html( $tel['label'] ); ?></small><?php endif; ?>
+							<?php echo esc_html( $tel['numero'] ); ?>
+						</a>
+					<?php endforeach; ?>
 				</div>
 			</div>
 
