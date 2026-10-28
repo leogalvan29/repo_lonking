@@ -2,10 +2,14 @@
 /**
  * Sección de video del home — template-parts/video-home.php
  *
- * Video de YouTube como fondo decorativo (autoplay, sin sonido, en loop
- * y sin controles), justo después del hero. Contenido editable vía ACF
- * (field group "Home — Video", ver acf-json/group_home_video.json).
- * Si la URL del video está vacía o no es válida, la sección no se muestra.
+ * Video de YouTube centrado, justo después del hero. Se muestra la
+ * miniatura con un botón de play y el iframe de YouTube solo se carga
+ * al hacer clic (initVideoFacades en main.js), para no cargar ~1MB de
+ * JS de YouTube en cada visita. Sin JS, el botón abre el video en YouTube.
+ *
+ * Contenido editable vía ACF (field group "Home — Video", ver
+ * acf-json/group_home_video.json). Si la URL del video está vacía o no
+ * es válida, la sección no se muestra.
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -20,48 +24,39 @@ if ( ! $video_id ) {
 
 $titulo    = amex_get_field( 'video_home_titulo' );
 $subtitulo = amex_get_field( 'video_home_subtitulo' );
-$poster    = amex_get_field( 'video_home_imagen_respaldo' );
-$poster    = $poster ? $poster['url'] : 'https://i.ytimg.com/vi/' . $video_id . '/hqdefault.jpg';
+$imagen    = amex_get_field( 'video_home_imagen_respaldo' );
+$imagen    = $imagen ? $imagen['url'] : amex_youtube_thumbnail( $video_id );
+$label     = $titulo ?: __( 'Video Amex Machinery', 'amex-machinery' );
 
-// loop=1 solo funciona en el embed si playlist apunta al mismo video.
 $embed_url = add_query_arg(
 	array(
-		'autoplay'       => 1,
-		'mute'           => 1,
-		'loop'           => 1,
-		'playlist'       => $video_id,
-		'controls'       => 0,
-		'playsinline'    => 1,
-		'rel'            => 0,
-		'disablekb'      => 1,
-		'iv_load_policy' => 3,
+		'autoplay' => 1,
+		'rel'      => 0,
 	),
 	'https://www.youtube-nocookie.com/embed/' . $video_id
 );
 ?>
-<section class="video-home<?php echo ( $titulo || $subtitulo ) ? ' video-home--has-text' : ''; ?>" style="--video-home-poster: url(<?php echo esc_url( $poster ); ?>)">
-	<div class="video-home__bg" aria-hidden="true">
-		<iframe
-			src="<?php echo esc_url( $embed_url ); ?>"
-			title="<?php echo esc_attr( $titulo ?: __( 'Video Amex Machinery', 'amex-machinery' ) ); ?>"
-			allow="autoplay; encrypted-media; picture-in-picture"
-			tabindex="-1"
-			loading="lazy"
-			frameborder="0"
-		></iframe>
-	</div>
+<section class="video-home">
+	<div class="container">
+		<?php if ( $titulo || $subtitulo ) : ?>
+			<div class="video-home__header">
+				<?php if ( $titulo ) : ?>
+					<h2 class="video-home__title"><?php echo esc_html( $titulo ); ?></h2>
+				<?php endif; ?>
 
-	<div class="video-home__overlay"></div>
+				<?php if ( $subtitulo ) : ?>
+					<p class="video-home__subtitle"><?php echo esc_html( $subtitulo ); ?></p>
+				<?php endif; ?>
+			</div>
+		<?php endif; ?>
 
-	<?php if ( $titulo || $subtitulo ) : ?>
-		<div class="container video-home__content">
-			<?php if ( $titulo ) : ?>
-				<h2 class="video-home__title"><?php echo esc_html( $titulo ); ?></h2>
-			<?php endif; ?>
-
-			<?php if ( $subtitulo ) : ?>
-				<p class="video-home__subtitle"><?php echo esc_html( $subtitulo ); ?></p>
-			<?php endif; ?>
+		<div class="video-home__player" data-video-facade data-embed-url="<?php echo esc_url( $embed_url ); ?>" data-video-title="<?php echo esc_attr( $label ); ?>">
+			<a class="video-home__facade" href="<?php echo esc_url( 'https://www.youtube.com/watch?v=' . $video_id ); ?>" target="_blank" rel="noopener" aria-label="<?php echo esc_attr( sprintf( __( 'Reproducir video: %s', 'amex-machinery' ), $label ) ); ?>">
+				<img src="<?php echo esc_url( $imagen ); ?>" alt="" loading="lazy" decoding="async">
+				<span class="video-home__play" aria-hidden="true">
+					<svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M8 5.5v13a.5.5 0 0 0 .76.43l10.4-6.5a.5.5 0 0 0 0-.86L8.76 5.07A.5.5 0 0 0 8 5.5Z"/></svg>
+				</span>
+			</a>
 		</div>
-	<?php endif; ?>
+	</div>
 </section>

@@ -172,6 +172,28 @@ function amex_youtube_id( $url ) {
 }
 
 /**
+ * URL de la miniatura de mayor resolución disponible para un video de
+ * YouTube. maxresdefault (1280×720) no existe en todos los videos, así
+ * que se verifica una vez y el resultado se guarda en un transient.
+ */
+function amex_youtube_thumbnail( $video_id ) {
+	$cache_key = 'amex_yt_thumb_' . $video_id;
+	$thumbnail = get_transient( $cache_key );
+
+	if ( false === $thumbnail ) {
+		$maxres    = 'https://i.ytimg.com/vi/' . $video_id . '/maxresdefault.jpg';
+		$response  = wp_remote_head( $maxres, array( 'timeout' => 3 ) );
+		$thumbnail = ( 200 === wp_remote_retrieve_response_code( $response ) )
+			? $maxres
+			: 'https://i.ytimg.com/vi/' . $video_id . '/hqdefault.jpg';
+
+		set_transient( $cache_key, $thumbnail, WEEK_IN_SECONDS );
+	}
+
+	return $thumbnail;
+}
+
+/**
  * Teléfonos del sitio (header/footer/hero/contacto/WhatsApp) — viven en
  * el Customizer (Apariencia > Personalizar > Información de Contacto),
  * no en ACF, para que haya una sola fuente de verdad.

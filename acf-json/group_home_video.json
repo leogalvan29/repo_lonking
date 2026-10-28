@@ -7,7 +7,7 @@
             "label": "URL del video de YouTube",
             "name": "video_home_url",
             "type": "url",
-            "instructions": "Pega el link del video (ej. https://www.youtube.com/watch?v=XXXXXXXXXXX o https://youtu.be/XXXXXXXXXXX). Se reproduce como fondo: automático, sin sonido y en loop. Déjalo vacío para ocultar la sección."
+            "instructions": "Pega el link del video (ej. https://www.youtube.com/watch?v=XXXXXXXXXXX o https://youtu.be/XXXXXXXXXXX). Se muestra centrado con un botón de play; el video se carga al hacer clic. Déjalo vacío para ocultar la sección."
         },
         {
             "key": "field_amex_video_home_titulo",
@@ -15,7 +15,7 @@
             "name": "video_home_titulo",
             "type": "textarea",
             "rows": 2,
-            "instructions": "Texto que aparece encima del video. Déjalo vacío para mostrar solo el video."
+            "instructions": "Texto centrado arriba del video. Déjalo vacío para mostrar solo el video."
         },
         {
             "key": "field_amex_video_home_subtitulo",
@@ -26,10 +26,10 @@
         },
         {
             "key": "field_amex_video_home_imagen_respaldo",
-            "label": "Imagen de respaldo (opcional)",
+            "label": "Miniatura personalizada (opcional)",
             "name": "video_home_imagen_respaldo",
             "type": "image",
-            "instructions": "Se muestra mientras carga el video y a quien tenga activada la opción de reducir movimiento. Si se deja vacía se usa la miniatura de YouTube.",
+            "instructions": "Imagen que se ve antes de dar play (idealmente 1280×720 o mayor, en 16:9). Si se deja vacía se usa la miniatura de YouTube en la mejor resolución disponible.",
             "return_format": "array",
             "preview_size": "medium"
         }
@@ -54,6 +54,6 @@
         "comments"
     ],
     "active": true,
-    "description": "Video de YouTube de fondo (autoplay, sin sonido, loop) mostrado después del hero.",
+    "description": "Video de YouTube centrado después del hero; se carga al dar clic en play.",
     "show_in_rest": 0
 }

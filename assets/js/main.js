@@ -9,7 +9,29 @@
 		initCatalogFilters();
 		initCarousels();
 		initAccordions();
+		initVideoFacades();
 	});
+
+	// Reemplaza la miniatura por el iframe de YouTube al hacer clic.
+	function initVideoFacades() {
+		document.querySelectorAll('[data-video-facade]').forEach(function (player) {
+			var facade = player.querySelector('a');
+			if (!facade) return;
+
+			facade.addEventListener('click', function (event) {
+				event.preventDefault();
+
+				var iframe = document.createElement('iframe');
+				iframe.src = player.getAttribute('data-embed-url');
+				iframe.title = player.getAttribute('data-video-title') || '';
+				iframe.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+				iframe.allowFullscreen = true;
+
+				player.replaceChildren(iframe);
+				iframe.focus();
+			});
+		});
+	}
 
 	function initAccordions() {
 		document.querySelectorAll('[data-accordion]').forEach(function (item) {
