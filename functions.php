@@ -152,6 +152,26 @@ function amex_get_field( $selector, $post_id = false, $default = '' ) {
 }
 
 /**
+ * Extrae el ID (11 caracteres) de una URL de YouTube. Acepta los
+ * formatos watch?v=, youtu.be/, shorts/, embed/ y live/, o el ID solo.
+ *
+ * @return string ID del video, o cadena vacía si la URL no es válida.
+ */
+function amex_youtube_id( $url ) {
+	$url = trim( (string) $url );
+
+	if ( preg_match( '~^[A-Za-z0-9_-]{11}$~', $url ) ) {
+		return $url;
+	}
+
+	if ( preg_match( '~(?:youtube(?:-nocookie)?\.com/(?:watch\?(?:.*&)?v=|embed/|shorts/|live/|v/)|youtu\.be/)([A-Za-z0-9_-]{11})~', $url, $matches ) ) {
+		return $matches[1];
+	}
+
+	return '';
+}
+
+/**
  * Teléfonos del sitio (header/footer/hero/contacto/WhatsApp) — viven en
  * el Customizer (Apariencia > Personalizar > Información de Contacto),
  * no en ACF, para que haya una sola fuente de verdad.

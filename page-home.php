@@ -8,6 +8,8 @@
 
 <?php echo get_template_part('template-parts/hero-home') ?>
 
+<?php echo get_template_part('template-parts/video-home') ?>
+
 <?php echo get_template_part('template-parts/amex360-home') ?>
 
 <?php echo get_template_part('template-parts/destacados-home') ?>
